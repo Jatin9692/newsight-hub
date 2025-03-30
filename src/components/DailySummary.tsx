@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -40,7 +40,7 @@ const newsItems = [
   }
 ];
 
-const NewsItem = ({ item }: { item: typeof newsItems[0] }) => {
+const NewsItem = ({ item, onClick }: { item: typeof newsItems[0], onClick: () => void }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -50,7 +50,16 @@ const NewsItem = ({ item }: { item: typeof newsItems[0] }) => {
       className="w-full border-b border-border pb-2 last:border-0 last:pb-0"
     >
       <div className="flex items-start justify-between py-2">
-        <CollapsibleTrigger className="flex items-start justify-between w-full text-left">
+        <CollapsibleTrigger 
+          className="flex items-start justify-between w-full text-left"
+          onClick={(e) => {
+            // Prevent the trigger from toggling if we're clicking to navigate
+            if (e.target === e.currentTarget) {
+              e.stopPropagation();
+              onClick();
+            }
+          }}
+        >
           <span className="text-sm font-medium">{item.title}</span>
           <span className="ml-2 flex-shrink-0 mt-0.5">
             {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
@@ -59,6 +68,12 @@ const NewsItem = ({ item }: { item: typeof newsItems[0] }) => {
       </div>
       <CollapsibleContent className="text-sm text-muted-foreground pl-2 pr-6 animate-accordion-down">
         <p>{item.summary}</p>
+        <button 
+          onClick={onClick} 
+          className="mt-2 text-primary text-xs font-medium hover:underline"
+        >
+          Read full story
+        </button>
       </CollapsibleContent>
     </Collapsible>
   );
@@ -66,6 +81,8 @@ const NewsItem = ({ item }: { item: typeof newsItems[0] }) => {
 
 const DailySummary = () => {
   const isMobile = useIsMobile();
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef<number | null>(null);
   const today = new Date().toLocaleDateString('en-US', { 
     weekday: 'long', 
     year: 'numeric', 
@@ -75,6 +92,31 @@ const DailySummary = () => {
   
   const mobileHeight = "max-h-[200px]";
   const desktopHeight = "h-full";
+  
+  const handleNewsClick = (newsId: number) => {
+    console.log(`Navigating to news with ID: ${newsId}`);
+    // In a real app, you would navigate to the full article page
+    // Example: navigate(`/news/${newsId}`);
+  };
+  
+  // Handle touch events for swiping
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || !scrollContainerRef.current) return;
+    
+    const touchCurrentX = e.touches[0].clientX;
+    const diff = touchStartX.current - touchCurrentX;
+    
+    scrollContainerRef.current.scrollLeft += diff;
+    touchStartX.current = touchCurrentX;
+  };
+  
+  const handleTouchEnd = () => {
+    touchStartX.current = null;
+  };
 
   return (
     <Card className={`w-full ${isMobile ? 'h-auto' : desktopHeight} bg-gradient-to-br from-primary/10 to-primary/5`}>
@@ -85,13 +127,38 @@ const DailySummary = () => {
       <CardContent className="pt-0">
         <div className="space-y-2">
           <h3 className="font-medium">Top Stories Today</h3>
-          <ScrollArea className={`${isMobile ? mobileHeight : 'h-[350px]'} pr-3 ${isMobile ? 'overflow-x-auto' : ''}`}>
-            <div className="space-y-1">
-              {newsItems.map((item) => (
-                <NewsItem key={item.id} item={item} />
-              ))}
+          {isMobile ? (
+            <div 
+              ref={scrollContainerRef}
+              className="overflow-x-auto touch-pan-x"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              <div className="flex space-x-4 px-1 py-2 w-max min-w-full">
+                {newsItems.map((item) => (
+                  <div key={item.id} className="min-w-[85%] bg-background p-3 rounded-md shadow-sm">
+                    <NewsItem 
+                      item={item} 
+                      onClick={() => handleNewsClick(item.id)} 
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          </ScrollArea>
+          ) : (
+            <ScrollArea className={`h-[350px] pr-3`}>
+              <div className="space-y-1">
+                {newsItems.map((item) => (
+                  <NewsItem 
+                    key={item.id} 
+                    item={item} 
+                    onClick={() => handleNewsClick(item.id)} 
+                  />
+                ))}
+              </div>
+            </ScrollArea>
+          )}
         </div>
         <div className="pt-4">
           <p className="text-sm text-muted-foreground">

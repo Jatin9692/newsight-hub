@@ -9,6 +9,9 @@ import Index from "./pages/Index";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import SimplifiedInsights from "./pages/SimplifiedInsights";
+import Gifts from "./pages/Gifts";
+import EducationalFocus from "./pages/EducationalFocus";
 
 // Create a client
 const queryClient = new QueryClient();
@@ -25,6 +28,9 @@ function App() {
               <Route path="/" element={<Index />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/about" element={<About />} />
+              <Route path="/simplified-insights" element={<SimplifiedInsights />} />
+              <Route path="/gifts" element={<Gifts />} />
+              <Route path="/educational-focus" element={<EducationalFocus />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
