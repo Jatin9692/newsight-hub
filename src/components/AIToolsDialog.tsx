@@ -47,15 +47,14 @@ const aiTools: AITool[] = [
 
 interface AIToolsDialogProps {
   triggerId?: string;
+  children: React.ReactNode; // Add the children prop to the interface
 }
 
-const AIToolsDialog = ({ triggerId }: AIToolsDialogProps) => {
+const AIToolsDialog = ({ triggerId, children }: AIToolsDialogProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild id={triggerId}>
-        <div className="cursor-pointer">
-          {/* Content will be specified by parent component */}
-        </div>
+        {children}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
