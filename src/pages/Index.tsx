@@ -10,8 +10,8 @@ const Index = () => {
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <main className="flex-1">
-        <section className="container py-8 md:py-12">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <section className="container py-6 md:py-10">
+          <div className="flex flex-col items-center justify-center space-y-3 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Welcome to <span className="text-primary">NewsightHub</span>
             </h1>
@@ -21,12 +21,12 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="container py-8">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
-            <div className="lg:col-span-1">
+        <section className="container py-4">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+            <div className="md:col-span-1">
               <DailySummary />
             </div>
-            <div className="lg:col-span-3">
+            <div className="md:col-span-2 lg:col-span-3">
               <CategoryTabs />
             </div>
           </div>
