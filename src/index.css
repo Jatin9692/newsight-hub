@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 252 56% 55%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -61,8 +55,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 252 56% 55%;
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -97,5 +91,31 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .news-card {
+    @apply bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .category-button {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-200;
+  }
+  
+  .category-finance {
+    @apply bg-indigo-100 text-news-finance hover:bg-indigo-200;
+  }
+  
+  .category-marketing {
+    @apply bg-purple-100 text-news-marketing hover:bg-purple-200;
+  }
+  
+  .category-politics {
+    @apply bg-pink-100 text-news-politics hover:bg-pink-200;
+  }
+  
+  .category-sports {
+    @apply bg-blue-100 text-news-sports hover:bg-blue-200;
   }
 }
