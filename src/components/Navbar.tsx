@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link to="/" className="text-2xl font-bold text-primary">
-            NewsightHub
+            Biznews
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6">

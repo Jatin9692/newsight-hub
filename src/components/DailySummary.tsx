@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 // Mock news data - in a real app, this would come from an API
 const newsItems = [
@@ -64,15 +65,19 @@ const NewsItem = ({ item }: { item: typeof newsItems[0] }) => {
 };
 
 const DailySummary = () => {
+  const isMobile = useIsMobile();
   const today = new Date().toLocaleDateString('en-US', { 
     weekday: 'long', 
     year: 'numeric', 
     month: 'long', 
     day: 'numeric' 
   });
+  
+  const mobileHeight = "max-h-[200px]";
+  const desktopHeight = "h-full";
 
   return (
-    <Card className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/5">
+    <Card className={`w-full ${isMobile ? 'h-auto' : desktopHeight} bg-gradient-to-br from-primary/10 to-primary/5`}>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl font-bold">Daily Summary</CardTitle>
         <CardDescription>{today}</CardDescription>
@@ -80,7 +85,7 @@ const DailySummary = () => {
       <CardContent className="pt-0">
         <div className="space-y-2">
           <h3 className="font-medium">Top Stories Today</h3>
-          <ScrollArea className="h-[350px] pr-3">
+          <ScrollArea className={`${isMobile ? mobileHeight : 'h-[350px]'} pr-3 ${isMobile ? 'overflow-x-auto' : ''}`}>
             <div className="space-y-1">
               {newsItems.map((item) => (
                 <NewsItem key={item.id} item={item} />

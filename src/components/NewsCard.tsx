@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { NewsArticle } from '../data/newsData';
 import { NewsCategory } from './CategoryTabs';
-import { Calendar, Clock } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 interface NewsCardProps {
   article: NewsArticle;
@@ -39,11 +39,7 @@ const NewsCard = ({ article, category }: NewsCardProps) => {
       <CardContent className="py-2 flex-grow">
         <p className="text-sm">{article.summary}</p>
       </CardContent>
-      <CardFooter className="pt-2 flex justify-between items-center text-xs text-muted-foreground">
-        <div className="flex items-center gap-1">
-          <Calendar size={12} />
-          <span>{article.date}</span>
-        </div>
+      <CardFooter className="pt-2 flex justify-end items-center text-xs text-muted-foreground">
         <div className="flex items-center gap-1">
           <Clock size={12} />
           <span>{article.readTime} min read</span>
