@@ -81,8 +81,6 @@ const NewsItem = ({ item, onClick }: { item: typeof newsItems[0], onClick: () =>
 
 const DailySummary = () => {
   const isMobile = useIsMobile();
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const touchStartX = useRef<number | null>(null);
   const today = new Date().toLocaleDateString('en-US', { 
     weekday: 'long', 
     year: 'numeric', 
@@ -90,32 +88,12 @@ const DailySummary = () => {
     day: 'numeric' 
   });
   
-  const mobileHeight = "max-h-[200px]";
   const desktopHeight = "h-full";
   
   const handleNewsClick = (newsId: number) => {
     console.log(`Navigating to news with ID: ${newsId}`);
     // In a real app, you would navigate to the full article page
     // Example: navigate(`/news/${newsId}`);
-  };
-  
-  // Handle touch events for swiping
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-  
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (touchStartX.current === null || !scrollContainerRef.current) return;
-    
-    const touchCurrentX = e.touches[0].clientX;
-    const diff = touchStartX.current - touchCurrentX;
-    
-    scrollContainerRef.current.scrollLeft += diff;
-    touchStartX.current = touchCurrentX;
-  };
-  
-  const handleTouchEnd = () => {
-    touchStartX.current = null;
   };
 
   return (
@@ -127,38 +105,17 @@ const DailySummary = () => {
       <CardContent className="pt-0">
         <div className="space-y-2">
           <h3 className="font-medium">Top Stories Today</h3>
-          {isMobile ? (
-            <div 
-              ref={scrollContainerRef}
-              className="overflow-x-auto touch-pan-x"
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={handleTouchEnd}
-            >
-              <div className="flex space-x-4 px-1 py-2 w-max min-w-full">
-                {newsItems.map((item) => (
-                  <div key={item.id} className="min-w-[85%] bg-background p-3 rounded-md shadow-sm">
-                    <NewsItem 
-                      item={item} 
-                      onClick={() => handleNewsClick(item.id)} 
-                    />
-                  </div>
-                ))}
-              </div>
+          <ScrollArea className={`${isMobile ? 'h-[200px]' : 'h-[350px]'} pr-3`}>
+            <div className="space-y-1">
+              {newsItems.map((item) => (
+                <NewsItem 
+                  key={item.id} 
+                  item={item} 
+                  onClick={() => handleNewsClick(item.id)} 
+                />
+              ))}
             </div>
-          ) : (
-            <ScrollArea className={`h-[350px] pr-3`}>
-              <div className="space-y-1">
-                {newsItems.map((item) => (
-                  <NewsItem 
-                    key={item.id} 
-                    item={item} 
-                    onClick={() => handleNewsClick(item.id)} 
-                  />
-                ))}
-              </div>
-            </ScrollArea>
-          )}
+          </ScrollArea>
         </div>
         <div className="pt-4">
           <p className="text-sm text-muted-foreground">

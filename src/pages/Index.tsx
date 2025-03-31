@@ -85,28 +85,28 @@ const Index = () => {
               We simplify complex topics, provide educational resources, and keep you updated with relevant insights.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full pt-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full pt-3">
               <div 
                 onClick={() => handleFeatureClick('insights')}
-                className="flex flex-col items-center p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors cursor-pointer"
+                className="flex flex-col items-center p-3 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors cursor-pointer shadow-sm hover:shadow-md"
               >
-                <h3 className="font-bold mb-2">{featureContent.insights.title}</h3>
+                <h3 className="font-bold mb-1">{featureContent.insights.title}</h3>
                 <p className="text-sm text-center">{featureContent.insights.description}</p>
               </div>
               
               <div 
                 onClick={() => handleFeatureClick('gifts')}
-                className="flex flex-col items-center p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors cursor-pointer"
+                className="flex flex-col items-center p-3 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors cursor-pointer shadow-sm hover:shadow-md"
               >
-                <h3 className="font-bold mb-2">{featureContent.gifts.title}</h3>
+                <h3 className="font-bold mb-1">{featureContent.gifts.title}</h3>
                 <p className="text-sm text-center">{featureContent.gifts.description}</p>
               </div>
               
               <div 
                 onClick={() => handleFeatureClick('educational')}
-                className="flex flex-col items-center p-4 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors cursor-pointer"
+                className="flex flex-col items-center p-3 bg-secondary/50 rounded-lg hover:bg-secondary/70 transition-colors cursor-pointer shadow-sm hover:shadow-md"
               >
-                <h3 className="font-bold mb-2">{featureContent.educational.title}</h3>
+                <h3 className="font-bold mb-1">{featureContent.educational.title}</h3>
                 <p className="text-sm text-center">{featureContent.educational.description}</p>
               </div>
             </div>
