@@ -6,11 +6,6 @@ backend:
 site_url: https://businessnewslive.netlify.app
 logo_url: https://businessnewslive.netlify.app/logo.png  
 
-# Allow Netlify Identity users  
-auth:
-  use_role_based_auth: true
-  roles: ["editor", "admin"]
-
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
