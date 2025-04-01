@@ -1,17 +1,24 @@
 backend:
-  name: Jatin9692
-  repo: newssight-hub 
-  branch: main  # Change to 'master' if your repo uses 'master' branch
+  name: git-gateway
+  branch: main
 
-media_folder: "images/uploads" # Where uploaded images go
-public_folder: "/images/uploads"
+# Enable manual authentication settings  
+site_url: https://businessnewslive.netlify.app
+logo_url: https://businessnewslive.netlify.app/logo.png  
+
+# Allow Netlify Identity users  
+auth:
+  use_role_based_auth: true
+  roles: ["editor", "admin"]
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "posts"
     label: "Posts"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
