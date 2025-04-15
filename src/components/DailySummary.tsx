@@ -1,11 +1,9 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 // Mock news data - in a real app, this would come from an API
 const newsItems = [
@@ -66,38 +64,16 @@ const newsItems = [
 ];
 
 const NewsItem = ({ item, onClick }: { item: typeof newsItems[0], onClick: () => void }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <Collapsible
-      open={isOpen}
-      onOpenChange={setIsOpen}
-      className="w-full border-b border-border pb-2 last:border-0 last:pb-0"
+    <div 
+      onClick={onClick}
+      className="w-full border-b border-border pb-2 last:border-0 last:pb-0 cursor-pointer hover:bg-secondary/10 p-2 rounded transition-colors"
     >
-      <div className="flex items-start justify-between py-2">
-        <CollapsibleTrigger 
-          className="flex items-start justify-between w-full text-left"
-          onClick={(e) => {
-            // We want the click to both toggle the collapsible and potentially navigate
-            e.stopPropagation();
-          }}
-        >
-          <span className="text-sm font-medium cursor-pointer hover:text-primary transition-colors" onClick={onClick}>{item.title}</span>
-          <span className="ml-2 flex-shrink-0 mt-0.5">
-            {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-          </span>
-        </CollapsibleTrigger>
+      <div className="flex items-start justify-between">
+        <span className="text-sm font-medium hover:text-primary transition-colors flex-grow">{item.title}</span>
+        <ArrowRight className="h-4 w-4 text-muted-foreground flex-shrink-0 ml-2" />
       </div>
-      <CollapsibleContent className="text-sm text-muted-foreground pl-2 pr-6 animate-accordion-down">
-        <p>{item.summary}</p>
-        <button 
-          onClick={onClick} 
-          className="mt-2 text-primary text-xs font-medium hover:underline"
-        >
-          Read full story
-        </button>
-      </CollapsibleContent>
-    </Collapsible>
+    </div>
   );
 };
 
@@ -115,23 +91,18 @@ const DailySummary = () => {
   const desktopHeight = "h-full";
   
   const handleNewsClick = (newsItem: typeof newsItems[0]) => {
-    // Create a URL-friendly slug from the title
     const slug = newsItem.title.toLowerCase().replace(/[^\w\s]/gi, '').replace(/\s+/g, '-');
-    
-    // Create an article object that matches the NewsArticle interface
-    const article = {
-      title: newsItem.title,
-      source: newsItem.source,
-      summary: newsItem.summary,
-      date: newsItem.date,
-      readTime: newsItem.readTime
-    };
-    
-    // Navigate to the news detail page with the category and slug
     navigate(`/news/${newsItem.category}/${slug}`, { 
       state: { 
-        article,
-        category: newsItem.category
+        article: {
+          title: newsItem.title,
+          source: newsItem.source,
+          summary: newsItem.summary,
+          date: newsItem.date,
+          readTime: newsItem.readTime
+        },
+        category: newsItem.category,
+        isDailySummary: true
       }
     });
   };

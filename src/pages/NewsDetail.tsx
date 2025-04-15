@@ -7,10 +7,12 @@ import { NewsArticle } from '../data/newsData';
 import { NewsCategory } from '../components/CategoryTabs';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Clock } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface LocationState {
   article: NewsArticle;
   category: NewsCategory;
+  isDailySummary?: boolean;
 }
 
 const NewsDetail = () => {
@@ -18,8 +20,6 @@ const NewsDetail = () => {
   const { category } = useParams<{ category: string; slug: string }>();
   const state = location.state as LocationState;
 
-  // If we don't have state (e.g., from a direct link), we could fetch the article
-  // based on slug and category, but for this example we'll just display a message
   if (!state || !state.article) {
     return (
       <div className="flex min-h-screen flex-col">
@@ -47,7 +47,6 @@ const NewsDetail = () => {
 
   const { article } = state;
   
-  // Get category color class
   const getCategoryColor = () => {
     switch (category) {
       case 'finance': return 'text-news-finance';
@@ -57,23 +56,6 @@ const NewsDetail = () => {
       default: return 'text-primary';
     }
   };
-
-  // Example expanded article content - in a real app this would come from an API
-  const expandedContent = `
-    ${article.summary}
-    
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu felis vel metus interdum facilisis. 
-    Donec sem nisl, vulputate et lorem non, aliquam lacinia metus. Donec efficitur nulla a lacus volutpat, 
-    in ultricies enim finibus. Nullam euismod nisl vel tellus suscipit, ut feugiat turpis eleifend.
-    
-    Praesent a enim vitae est fringilla venenatis. Sed a tortor risus. Nullam porttitor at nisl id 
-    tincidunt. Suspendisse eleifend gravida neque ut aliquam. Donec fermentum, metus id pulvinar 
-    vestibulum, ante lectus gravida eros, vel fringilla tellus nisl eget eros. Ut et ipsum et ante 
-    luctus faucibus nec id ex.
-    
-    In a real application, this would be a full article with proper formatting, images, and potentially 
-    other interactive elements like charts or embedded videos.
-  `;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -89,24 +71,27 @@ const NewsDetail = () => {
         </div>
         
         <article className="max-w-3xl mx-auto">
-          <header className="mb-8">
-            <h1 className="text-3xl font-bold mb-2">{article.title}</h1>
-            <div className="flex flex-wrap gap-4 items-center text-sm text-muted-foreground mb-4">
-              <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
-              <span>{article.source}</span>
-              <span>{article.date}</span>
-              <div className="flex items-center gap-1">
-                <Clock size={14} />
-                <span>{article.readTime} min read</span>
+          <Card className="bg-card">
+            <CardHeader>
+              <CardTitle className="text-2xl mb-4">{article.title}</CardTitle>
+              <div className="flex flex-wrap gap-4 items-center text-sm text-muted-foreground">
+                {!state.isDailySummary && (
+                  <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
+                )}
+                <span>{article.source}</span>
+                <span>{article.date}</span>
+                <div className="flex items-center gap-1">
+                  <Clock size={14} />
+                  <span>{article.readTime} min read</span>
+                </div>
               </div>
-            </div>
-          </header>
-          
-          <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
-            {expandedContent.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="mb-4">{paragraph}</p>
-            ))}
-          </div>
+            </CardHeader>
+            <CardContent>
+              <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
+                <p className="text-lg mb-6">{article.summary}</p>
+              </div>
+            </CardContent>
+          </Card>
         </article>
       </main>
       <Footer />

@@ -30,9 +30,7 @@ const NewsCard = ({ article, category }: NewsCardProps) => {
   };
 
   const handleCardClick = () => {
-    // Create a URL-friendly slug from the title
     const slug = article.title.toLowerCase().replace(/[^\w\s]/gi, '').replace(/\s+/g, '-');
-    // Navigate to a detail page with category and slug
     navigate(`/news/${category}/${slug}`, { 
       state: { article, category }
     });
@@ -40,13 +38,13 @@ const NewsCard = ({ article, category }: NewsCardProps) => {
 
   return (
     <Card 
-      className={`news-card h-full flex flex-col ${getCategoryStyle()} cursor-pointer hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200`}
+      className={`news-card h-full flex flex-col ${getCategoryStyle()} cursor-pointer hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 group`}
       onClick={handleCardClick}
     >
       <CardHeader className="pb-2">
         <div className="flex justify-between items-start">
           <div>
-            <CardTitle className="text-base font-semibold">{article.title}</CardTitle>
+            <CardTitle className="text-base font-semibold group-hover:text-primary transition-colors">{article.title}</CardTitle>
             <CardDescription className="text-xs text-muted-foreground">{article.source}</CardDescription>
           </div>
         </div>
@@ -59,7 +57,7 @@ const NewsCard = ({ article, category }: NewsCardProps) => {
           <Clock size={12} />
           <span>{article.readTime} min read</span>
         </div>
-        <div className="text-primary flex items-center gap-1 hover:underline">
+        <div className="text-primary flex items-center gap-1 group-hover:underline">
           <span className="text-xs">Read more</span>
           <ArrowRight size={12} />
         </div>
