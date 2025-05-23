@@ -1,12 +1,12 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation, useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { NewsArticle } from '../data/newsData';
 import { NewsCategory } from '../components/CategoryTabs';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Clock } from 'lucide-react';
+import { ArrowLeft, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface LocationState {
@@ -19,6 +19,7 @@ const NewsDetail = () => {
   const location = useLocation();
   const { category } = useParams<{ category: string; slug: string }>();
   const state = location.state as LocationState;
+  const [isExpanded, setIsExpanded] = useState(false);
 
   if (!state || !state.article) {
     return (
@@ -57,7 +58,14 @@ const NewsDetail = () => {
     }
   };
 
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   const isHTMLContent = article.summary.includes('<div class="article-content">');
+  const displaySummary = isHTMLContent ? 
+    article.summary : 
+    `<div class="article-content"><p>${article.summary}</p></div>`;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -89,16 +97,24 @@ const NewsDetail = () => {
               </div>
             </CardHeader>
             <CardContent>
-              {isHTMLContent ? (
+              <div className={`article-preview ${isExpanded ? 'expanded' : 'collapsed'}`}>
                 <div 
                   className="formatted-article-content"
-                  dangerouslySetInnerHTML={{ __html: article.summary }}
+                  dangerouslySetInnerHTML={{ __html: displaySummary }}
                 />
-              ) : (
-                <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
-                  <p className="text-lg mb-6">{article.summary}</p>
-                </div>
-              )}
+              </div>
+              
+              <Button
+                onClick={toggleExpanded}
+                variant="outline"
+                className="mt-4 w-full flex items-center justify-center gap-1"
+              >
+                {isExpanded ? (
+                  <>Show Less <ChevronUp size={16} /></>
+                ) : (
+                  <>Read More <ChevronDown size={16} /></>
+                )}
+              </Button>
             </CardContent>
           </Card>
         </article>
