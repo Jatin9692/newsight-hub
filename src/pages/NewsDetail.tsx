@@ -62,10 +62,22 @@ const NewsDetail = () => {
     setIsExpanded(!isExpanded);
   };
 
-  const isHTMLContent = article.summary.includes('<div class="article-content">');
-  const displaySummary = isHTMLContent ? 
-    article.summary : 
-    `<div class="article-content"><p>${article.summary}</p></div>`;
+  // Create a clean summary with just plain text for the preview
+  const createPlainTextSummary = (htmlContent) => {
+    // For HTML content, create a temporary div to extract text
+    if (htmlContent.includes('<div class="article-content">')) {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = htmlContent;
+      return tempDiv.textContent || tempDiv.innerText || '';
+    }
+    // For plain text, just return it directly
+    return htmlContent;
+  };
+
+  const plainTextSummary = createPlainTextSummary(article.summary);
+  const previewText = plainTextSummary.length > 150 ? 
+    plainTextSummary.substring(0, 150) + '...' : 
+    plainTextSummary;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -80,11 +92,11 @@ const NewsDetail = () => {
           </Button>
         </div>
         
-        <article className="max-w-4xl mx-auto">
-          <Card className="bg-card">
+        <article className="max-w-3xl mx-auto">
+          <Card className="bg-card shadow-md">
             <CardHeader>
-              <CardTitle className="text-3xl mb-4 leading-tight">{article.title}</CardTitle>
-              <div className="flex flex-wrap gap-4 items-center text-sm text-muted-foreground">
+              <CardTitle className="text-2xl font-bold mb-3">{article.title}</CardTitle>
+              <div className="flex flex-wrap gap-3 items-center text-sm text-muted-foreground">
                 {!state.isDailySummary && (
                   <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
                 )}
@@ -97,22 +109,30 @@ const NewsDetail = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className={`article-preview ${isExpanded ? 'expanded' : 'collapsed'}`}>
-                <div 
-                  className="formatted-article-content"
-                  dangerouslySetInnerHTML={{ __html: displaySummary }}
-                />
+              <div className="mb-4 text-gray-700">
+                {!isExpanded ? (
+                  <p className="text-base leading-relaxed">{previewText}</p>
+                ) : (
+                  article.summary.includes('<div class="article-content">') ? (
+                    <div 
+                      className="formatted-article-content"
+                      dangerouslySetInnerHTML={{ __html: article.summary }}
+                    />
+                  ) : (
+                    <p className="text-base leading-relaxed">{article.summary}</p>
+                  )
+                )}
               </div>
               
               <Button
                 onClick={toggleExpanded}
                 variant="outline"
-                className="mt-4 w-full flex items-center justify-center gap-1"
+                className="mt-2 w-full flex items-center justify-center gap-1"
               >
                 {isExpanded ? (
                   <>Show Less <ChevronUp size={16} /></>
                 ) : (
-                  <>Read More <ChevronDown size={16} /></>
+                  <>Read Full Article <ChevronDown size={16} /></>
                 )}
               </Button>
             </CardContent>
