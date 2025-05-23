@@ -26,22 +26,55 @@ export const newsData: NewsDataType = {
     {
       title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
       source: "Business Today",
-      summary: `The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24. 
-
-Reasons Behind the Record Transfer:
-- Higher Earnings from Forex Operations: Strong foreign exchange gains, driven by increased dollar sales and favourable exchange-rate movements, boosted the RBI's income.
-
-Key Details of the Payout:
-Fiscal Year 2022-23: ₹87,416 crore (6.0% CRB)
-Fiscal Year 2023-24: ₹2.10 lakh crore (6.5% CRB)  
-Fiscal Year 2024-25: ₹2.68–2.69 lakh crore (7.5% CRB)
-
-Consequences & Implications:
-For the Central Government: The ₹2.69 lakh crore helps narrow the fiscal deficit without additional market borrowing and frees up capital for infrastructure, healthcare, education, and social welfare schemes.
-
-For Financial Markets: This signals robust economic management, bolstering credit ratings and attracting foreign investment. Lower government borrowing requirements may exert less pressure on bond yields.
-
-For Citizens: With the government better funded, there's less need for tax hikes, helping keep the overall tax burden stable while improving public services.`,
+      summary: `<div class="article-content">
+        <p class="lead-paragraph">The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24.</p>
+        
+        <h3>Reasons Behind the Record Transfer</h3>
+        <ul>
+          <li><strong>Higher Earnings from Forex Operations:</strong> Strong foreign exchange gains, driven by increased dollar sales and favourable exchange-rate movements, boosted the RBI's income. These gains form a significant part of the central bank's surplus.</li>
+        </ul>
+        
+        <p class="note"><em>Note: Despite paying out a larger dividend, the RBI maintains a robust CRB (now 7.5%)—well within the 4.5–7.5% range set by the revised ECF—ensuring a buffer for contingencies.</em></p>
+        
+        <h3>Key Details of the Payout</h3>
+        <div class="payout-table">
+          <div class="table-row"><strong>Fiscal Year 2022-23:</strong> ₹87,416 crore (6.0% CRB)</div>
+          <div class="table-row"><strong>Fiscal Year 2023-24:</strong> ₹2.10 lakh crore (6.5% CRB)</div>
+          <div class="table-row"><strong>Fiscal Year 2024-25:</strong> ₹2.68–2.69 lakh crore (7.5% CRB)</div>
+        </div>
+        
+        <h3>Consequences & Implications</h3>
+        
+        <h4>For the Central Government</h4>
+        <ul>
+          <li><strong>Fiscal Relief:</strong> The ₹2.69 lakh crore helps narrow the fiscal deficit (targeted at 4.4% of GDP for FY 2025-26) without having to take additional market borrowing</li>
+          <li><strong>Enhanced Spending Capacity:</strong> Frees up capital for infrastructure, healthcare, education, and social welfare schemes—without cutting other expenditures.</li>
+        </ul>
+        
+        <h4>For the RBI</h4>
+        <ul>
+          <li><strong>Maintained Buffers:</strong> By raising the CRB to 7.5%, the RBI retains a strong cushion against unforeseen shocks. Contingency Risk Buffer (CRB) is like emergency savings in case something goes wrong in the future (like a financial crisis or sudden loss). This means, RBI still has 7.5% of its money saved in this emergency fund.</li>
+        </ul>
+        
+        <h4>For Financial Markets</h4>
+        <ul>
+          <li><strong>Investor Confidence:</strong> A large surplus transfer, such as this, signals robust economic management, bolstering credit ratings and attracting foreign investment.</li>
+          <li><strong>Bond Market Dynamics:</strong> Lower government borrowing requirements may exert less pressure on bond yields, benefiting both corporate and retail borrowers.</li>
+        </ul>
+        
+        <h4>For Banks & Financial Institutions</h4>
+        <ul>
+          <li><strong>Liquidity Support:</strong> RBI's strong financial position ensures it can provide liquidity through tools like repo operations during stress periods.</li>
+        </ul>
+        
+        <h4>For Taxpayers & Citizens</h4>
+        <ul>
+          <li><strong>Indirect Benefits:</strong> With the government better funded, there's less need for tax hikes or fee increases—helping keep the overall tax burden stable.</li>
+          <li><strong>Better Public Services:</strong> Improved financing for public goods (roads, healthcare, education) enhances the quality of life.</li>
+        </ul>
+        
+        <p class="conclusion">This record surplus transfer of ₹2.68–2.69 lakh crore reflects the RBI's earnings from forex operations. It provides a significant fiscal boost to the government, bolsters market confidence, and ensures that the RBI retains sufficient buffer to navigate future economic uncertainties.</p>
+      </div>`,
       date: "Sep 12, 2023",
       readTime: 5
     },

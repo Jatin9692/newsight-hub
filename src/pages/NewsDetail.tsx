@@ -57,6 +57,8 @@ const NewsDetail = () => {
     }
   };
 
+  const isHTMLContent = article.summary.includes('<div class="article-content">');
+
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
@@ -70,15 +72,15 @@ const NewsDetail = () => {
           </Button>
         </div>
         
-        <article className="max-w-3xl mx-auto">
+        <article className="max-w-4xl mx-auto">
           <Card className="bg-card">
             <CardHeader>
-              <CardTitle className="text-2xl mb-4">{article.title}</CardTitle>
+              <CardTitle className="text-3xl mb-4 leading-tight">{article.title}</CardTitle>
               <div className="flex flex-wrap gap-4 items-center text-sm text-muted-foreground">
                 {!state.isDailySummary && (
                   <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
                 )}
-                <span>{article.source}</span>
+                <span className="font-medium">{article.source}</span>
                 <span>{article.date}</span>
                 <div className="flex items-center gap-1">
                   <Clock size={14} />
@@ -87,9 +89,16 @@ const NewsDetail = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
-                <p className="text-lg mb-6">{article.summary}</p>
-              </div>
+              {isHTMLContent ? (
+                <div 
+                  className="formatted-article-content"
+                  dangerouslySetInnerHTML={{ __html: article.summary }}
+                />
+              ) : (
+                <div className="prose prose-sm sm:prose lg:prose-lg max-w-none">
+                  <p className="text-lg mb-6">{article.summary}</p>
+                </div>
+              )}
             </CardContent>
           </Card>
         </article>
