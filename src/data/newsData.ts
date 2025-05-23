@@ -24,53 +24,24 @@ export const newsData: NewsDataType = {
       readTime: 3
     },
     {
-      title: "RBI’s ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
+      title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
       source: "Business Today",
-      summary: "summary: `The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. 
-This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24 
+      summary: `The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24. 
 
-Reasons Behind the Record Transfer
-- Higher Earnings from Forex Operations
-  o Strong foreign exchange gains, driven by increased dollar sales and favourable exchange-rate movements, boosted the RBI’s income. These gains form a significant part of the central bank’s surplus.
+Reasons Behind the Record Transfer:
+- Higher Earnings from Forex Operations: Strong foreign exchange gains, driven by increased dollar sales and favourable exchange-rate movements, boosted the RBI's income.
 
-Note: Despite paying out a larger dividend, the RBI maintains a robust CRB (now 7.5%)—well within the 4.5–7.5% range set by the revised ECF—ensuring a buffer for contingencies.
+Key Details of the Payout:
+Fiscal Year 2022-23: ₹87,416 crore (6.0% CRB)
+Fiscal Year 2023-24: ₹2.10 lakh crore (6.5% CRB)  
+Fiscal Year 2024-25: ₹2.68–2.69 lakh crore (7.5% CRB)
 
-Key Details of the Payout
-Fiscal Year    Dividend Transferred   CRB Maintained
-2022-23        ₹87,416 crore           6.0%
-2023-24        ₹2.10 lakh crore        6.5%
-2024-25        ₹2.68–2.69 lakh crore   7.5%
+Consequences & Implications:
+For the Central Government: The ₹2.69 lakh crore helps narrow the fiscal deficit without additional market borrowing and frees up capital for infrastructure, healthcare, education, and social welfare schemes.
 
-Consequences & Implications
-For the Central Government
-• Fiscal Relief:
-The ₹2.69 lakh crore helps narrow the fiscal deficit (targeted at 4.4% of GDP for FY 2025-26) without having to take additional market borrowing 
-• Enhanced Spending Capacity:
-Frees up capital for infrastructure, healthcare, education, and social welfare schemes—without cutting other expenditures.
-• Lower Borrowing Costs in Future:
+For Financial Markets: This signals robust economic management, bolstering credit ratings and attracting foreign investment. Lower government borrowing requirements may exert less pressure on bond yields.
 
-For the RBI
-- Maintained Buffers:
-By raising the CRB to 7.5%, the RBI retains a strong cushion against unforeseen shocks. Contingency Risk Buffer" (CRB). It’s like emergency savings in case something goes wrong in the future (like a financial crisis or sudden loss).
-
-For Financial Markets
-• Investor Confidence:
-A large surplus transfer, such as this, signals robust economic management, bolstering credit ratings and attracting foreign investment.
-• Bond Market Dynamics:
-Lower government borrowing requirements may exert less pressure on bond yields, benefiting both corporate and retail borrowers.
-
-For Banks & Financial Institutions
-• Liquidity Support:
-RBI’s strong financial position ensures it can provide liquidity through tools like repo operations during stress periods.
-
-For Taxpayers & Citizens
-• Indirect Benefits:
-With the government better funded, there’s less need for tax hikes or fee increases—helping keep the overall tax burden stable.
-• Better Public Services:
-Improved financing for public goods (roads, healthcare, education) enhances the quality of life.
-
-This record surplus transfer of ₹2.68–2.69 lakh crore reflects the RBI’s earnings from forex operations. It provides a significant fiscal boost to the government, bolsters market confidence, and ensures that the RBI retains sufficient buffer to navigate future economic uncertainties.`,
-.",
+For Citizens: With the government better funded, there's less need for tax hikes, helping keep the overall tax burden stable while improving public services.`,
       date: "Sep 12, 2023",
       readTime: 5
     },
