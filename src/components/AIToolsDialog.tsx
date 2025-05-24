@@ -19,9 +19,9 @@ interface AITool {
 
 const aiTools: AITool[] = [
   {
-    name: "ChatGPT",
-    description: "The versatile AI assistant for text generation, answering questions, and more.",
-    url: "https://chat.openai.com/"
+    name: "ElevenLabs",
+    description: "Text to speech with realistic human voices.",
+    url: "https://elevenlabs.io/"
   },
   {
     name: "Midjourney",
@@ -29,9 +29,9 @@ const aiTools: AITool[] = [
     url: "https://www.midjourney.com/"
   },
   {
-    name: "Canva AI",
-    description: "Design with AI assistance - create graphics, presentations, and more.",
-    url: "https://www.canva.com/"
+    name: "Lumini
+    description: "The best free stock photos and royalty free images. Powered by robots everywhere.
+    url: "https://www.lummi.ai/"
   },
   {
     name: "Otter.ai",

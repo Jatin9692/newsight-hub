@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import NewsCard from './NewsCard';
 import { newsData } from '../data/newsData';
 
-export type NewsCategory = 'finance' | 'marketing' | 'politics' | 'sports';
+export type NewsCategory = 'finance' | 'marketing' | 'politics' | 'AI"
 
 const CategoryTabs = () => {
   return (
