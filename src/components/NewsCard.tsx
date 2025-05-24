@@ -1,11 +1,10 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { NewsArticle } from '../data/newsData';
 import { NewsCategory } from './CategoryTabs';
-import { Clock, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { Clock, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 
 interface NewsCardProps {
   article: NewsArticle;
@@ -14,7 +13,6 @@ interface NewsCardProps {
 
 const NewsCard = ({ article, category }: NewsCardProps) => {
   const navigate = useNavigate();
-  const [isExpanded, setIsExpanded] = useState(false);
   
   const getCategoryStyle = () => {
     switch (category) {
@@ -55,11 +53,6 @@ const NewsCard = ({ article, category }: NewsCardProps) => {
     plainTextSummary.substring(0, 120) + '...' : 
     plainTextSummary;
 
-  const toggleExpanded = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent card click when clicking the button
-    setIsExpanded(!isExpanded);
-  };
-
   return (
     <Card 
       className={`news-card h-full flex flex-col ${getCategoryStyle()} cursor-pointer hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 group`}
@@ -75,33 +68,8 @@ const NewsCard = ({ article, category }: NewsCardProps) => {
       </CardHeader>
       <CardContent className="py-2 flex-grow">
         <div className="text-xs text-gray-700">
-          {!isExpanded ? (
-            <p>{previewText}</p>
-          ) : (
-            article.summary.includes('<div class="article-content">') ? (
-              <div 
-                className="formatted-article-content text-xs"
-                dangerouslySetInnerHTML={{ __html: article.summary }}
-              />
-            ) : (
-              <p>{article.summary}</p>
-            )
-          )}
+          <p>{previewText}</p>
         </div>
-        {plainTextSummary.length > 120 && (
-          <Button
-            onClick={toggleExpanded}
-            variant="ghost"
-            size="sm"
-            className="mt-2 p-0 h-auto text-xs text-primary hover:underline"
-          >
-            {isExpanded ? (
-              <>Show Less <ChevronUp size={12} /></>
-            ) : (
-              <>Read More <ChevronDown size={12} /></>
-            )}
-          </Button>
-        )}
       </CardContent>
       <CardFooter className="pt-2 flex justify-between items-center text-xs text-muted-foreground">
         <div className="flex items-center gap-1">
