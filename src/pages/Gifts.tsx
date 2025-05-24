@@ -30,19 +30,19 @@ const experts = [
 
 const tools = [
   {
-    name: "Market Analyzer Pro",
-    description: "Track market trends and analyze stock performance",
-    url: "#"
+    name: "Orange Data Mining",
+    description: "Open source machine learning and data visualization.",
+    url: "https://orangedatamining.com/"
   },
   {
-    name: "Content Calendar",
-    description: "Plan and schedule your content strategy effectively",
-    url: "#"
+    name: "Scribbr AI Detector",
+    description: "Identify AI-generated content, including ChatGPT and Copilot",
+    url: "https://www.scribbr.com/ai-detector/"
   },
   {
-    name: "Budget Tracker",
-    description: "Manage expenses and monitor financial goals",
-    url: "#"
+    name: "Tinkercad",
+    description: "3D design and modeling tool for beginners and educators.",
+    url: "https://www.tinkercad.com/"
   }
 ];
 

@@ -8,16 +8,16 @@ export interface Resource {
 
 export const resourcesData: Resource[] = [
   {
-    title: "ChatGPT",
+    title: "Desygner",
     category: "AI Tools",
-    description: "An AI language model that can help with writing, research, and creative content generation. Great for students working on essays or professionals drafting documents.",
-    link: "https://chat.openai.com/"
+    description: "comprehensive AI text and image creation platform with advanced features.",
+    link: "https://desygner.com/ai-powered-design/"
   },
   {
-    title: "Canva",
+    title: "Picktochart",
     category: "Design Tools",
-    description: "A free graphic design platform that allows users to create professional-looking presentations, social media graphics, and more without design experience.",
-    link: "https://www.canva.com/"
+    description: "quality infographics from any prompt—no design expertise needed.",
+    link: "https://piktochart.com/generative-ai/"
   },
   {
     title: "Khan Academy",
@@ -32,10 +32,10 @@ export const resourcesData: Resource[] = [
     link: "https://www.notion.so/"
   },
   {
-    title: "Coursera",
+    title: "Consensus",
     category: "Education",
-    description: "Platform offering free courses from top universities and companies. Great for expanding knowledge in business, technology, and more.",
-    link: "https://www.coursera.org/"
+    description: "AI-powered academic search engine",
+    link: "https://consensus.app/"
   },
   {
     title: "Grammarly",
