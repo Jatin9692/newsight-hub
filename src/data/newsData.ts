@@ -11,7 +11,7 @@ export interface NewsDataType {
   finance: NewsArticle[];
   marketing: NewsArticle[];
   politics: NewsArticle[];
-  sports: NewsArticle[];
+  ai: NewsArticle[];
 }
 
 export const newsData: NewsDataType = {
@@ -132,27 +132,27 @@ export const newsData: NewsDataType = {
       readTime: 3
     }
   ],
-  sports: [
+  ai: [
     {
-      title: "Championship Finals Break Viewership Records",
-      source: "Sports Network",
-      summary: "The finals series attracted the largest global audience in the sport's history, with streaming numbers showing particularly strong growth among younger demographics.",
+      title: "ChatGPT-4 Transforms Business Operations Across Industries",
+      source: "AI Weekly",
+      summary: "Companies implementing GPT-4 solutions are reporting 40% increases in productivity, with customer service automation and content creation leading the adoption curve.",
       date: "Sep 14, 2023",
-      readTime: 3
+      readTime: 4
     },
     {
-      title: "Analytics Revolution Changes Team Recruitment Strategies",
-      source: "Sports Analytics Weekly",
-      summary: "Professional teams are increasingly relying on advanced data metrics to identify talent, resulting in surprising draft picks and transfer decisions that challenge conventional wisdom.",
-      date: "Sep 11, 2023",
+      title: "Google's Bard Challenges OpenAI's Market Dominance",
+      source: "Tech Innovation",
+      summary: "Google's latest AI model Bard is gaining traction with advanced reasoning capabilities and integration with Google's ecosystem, creating new competition in the AI assistant market.",
+      date: "Sep 12, 2023",
       readTime: 5
     },
     {
-      title: "Student Athletes Benefit from New Endorsement Rules",
-      source: "College Sports Today",
-      summary: "Recent policy changes allowing college athletes to profit from their name, image, and likeness are creating unprecedented opportunities for students across various sports.",
-      date: "Sep 9, 2023",
-      readTime: 4
+      title: "AI Ethics Guidelines Updated by Global Tech Leaders",
+      source: "Future Tech",
+      summary: "Major technology companies have jointly released updated ethical guidelines for AI development, focusing on transparency, bias reduction, and responsible deployment practices.",
+      date: "Sep 10, 2023",
+      readTime: 3
     }
   ]
 };

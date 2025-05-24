@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -114,8 +115,8 @@
     @apply bg-pink-100 text-news-politics hover:bg-pink-200;
   }
   
-  .category-sports {
-    @apply bg-blue-100 text-news-sports hover:bg-blue-200;
+  .category-ai {
+    @apply bg-green-100 text-green-700 hover:bg-green-200;
   }
 
   /* Formatted Article Content Styles */

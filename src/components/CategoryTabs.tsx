@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import NewsCard from './NewsCard';
 import { newsData } from '../data/newsData';
 
-export type NewsCategory = 'finance' | 'marketing' | 'politics' | 'sports';
+export type NewsCategory = 'finance' | 'marketing' | 'politics' | 'ai';
 
 const CategoryTabs = () => {
   return (
@@ -13,7 +13,7 @@ const CategoryTabs = () => {
         <TabsTrigger value="finance" className="category-button category-finance">Finance</TabsTrigger>
         <TabsTrigger value="marketing" className="category-button category-marketing">Marketing</TabsTrigger>
         <TabsTrigger value="politics" className="category-button category-politics">Politics</TabsTrigger>
-        <TabsTrigger value="sports" className="category-button category-sports">Sports</TabsTrigger>
+        <TabsTrigger value="ai" className="category-button category-ai">AI</TabsTrigger>
       </TabsList>
       {(Object.keys(newsData) as NewsCategory[]).map((category) => (
         <TabsContent key={category} value={category} className="animate-fade-in">
