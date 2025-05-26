@@ -31,12 +31,20 @@ const experts = [
 const tools = [
   {
     name: "Orange Data Mining",
+<<<<<<< HEAD
     description: "Open source machine learning and data visualization."
+=======
+    description: "Open source machine learning and data visualization.",
+>>>>>>> 5484b9beaadf928f05f5109b2f0371a3b1e1d887
     url: "https://orangedatamining.com/"
   },
   {
     name: "Scribbr AI Detector",
+<<<<<<< HEAD
     description: "Identify AI-generated content, including ChatGPT and Copilot"
+=======
+    description: "Identify AI-generated content, including ChatGPT and Copilot",
+>>>>>>> 5484b9beaadf928f05f5109b2f0371a3b1e1d887
     url: "https://www.scribbr.com/ai-detector/"
   },
   {

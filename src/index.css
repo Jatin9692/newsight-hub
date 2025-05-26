@@ -43,6 +43,11 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom news category colors */
+    --news-finance: 99 102 241;
+    --news-marketing: 168 85 247;
+    --news-politics: 236 72 153;
   }
 
   .dark {
@@ -94,6 +99,32 @@
   }
 }
 
+@layer utilities {
+  .text-news-finance {
+    color: rgb(var(--news-finance));
+  }
+  
+  .text-news-marketing {
+    color: rgb(var(--news-marketing));
+  }
+  
+  .text-news-politics {
+    color: rgb(var(--news-politics));
+  }
+  
+  .border-news-finance {
+    border-color: rgb(var(--news-finance));
+  }
+  
+  .border-news-marketing {
+    border-color: rgb(var(--news-marketing));
+  }
+  
+  .border-news-politics {
+    border-color: rgb(var(--news-politics));
+  }
+}
+
 @layer components {
   .news-card {
     @apply bg-white rounded-lg shadow-md p-4 transition-all duration-300 hover:shadow-lg;
@@ -119,61 +150,138 @@
     @apply bg-green-100 text-green-700 hover:bg-green-200;
   }
 
-  /* Formatted Article Content Styles */
+  /* Professional Article Content Styles */
   .formatted-article-content {
-    @apply text-base leading-relaxed;
+    @apply text-base leading-relaxed text-gray-800 max-w-none;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
   }
 
   .formatted-article-content .lead-paragraph {
-    @apply text-lg font-medium mb-6 text-gray-900 leading-relaxed;
+    @apply text-xl font-medium mb-6 text-gray-900 leading-relaxed;
+    font-weight: 500;
+    color: #1f2937;
+    border-left: 4px solid #6366f1;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    font-style: italic;
   }
 
   .formatted-article-content h3 {
-    @apply text-xl font-bold mt-8 mb-4 text-gray-900 border-b border-gray-200 pb-2;
+    @apply text-2xl font-bold mt-8 mb-6 text-gray-900;
+    color: #111827;
+    border-bottom: 3px solid #e5e7eb;
+    padding-bottom: 8px;
+    font-family: 'Inter', 'Helvetica', sans-serif;
   }
 
   .formatted-article-content h4 {
-    @apply text-lg font-semibold mt-6 mb-3 text-gray-800;
+    @apply text-lg font-semibold mt-6 mb-4 text-gray-800;
+    color: #374151;
+    font-family: 'Inter', 'Helvetica', sans-serif;
   }
 
   .formatted-article-content ul {
-    @apply mb-6 space-y-3;
+    @apply mb-8 space-y-4;
+    padding-left: 0;
   }
 
   .formatted-article-content li {
-    @apply ml-4 pl-2 text-gray-700 leading-relaxed;
+    @apply ml-6 pl-4 text-gray-700 leading-relaxed;
     position: relative;
+    margin-bottom: 12px;
+    line-height: 1.6;
   }
 
   .formatted-article-content li::before {
-    content: "•";
+    content: "▪";
     color: #6366f1;
     font-weight: bold;
     position: absolute;
-    left: -16px;
+    left: -20px;
+    font-size: 18px;
   }
 
   .formatted-article-content strong {
     @apply font-semibold text-gray-900;
+    color: #111827;
   }
 
   .formatted-article-content .note {
-    @apply bg-blue-50 border-l-4 border-blue-400 p-4 mb-6 text-blue-800 italic;
+    @apply bg-blue-50 border-l-4 border-blue-400 p-6 mb-8 rounded-r-lg;
+    background: linear-gradient(to right, #dbeafe, #eff6ff);
+    color: #1e40af;
+    font-style: italic;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
 
   .formatted-article-content .payout-table {
-    @apply bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6;
+    @apply bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8;
+    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   }
 
   .formatted-article-content .table-row {
-    @apply py-2 border-b border-gray-200 last:border-b-0 text-gray-700;
+    @apply py-3 border-b border-gray-200 last:border-b-0 text-gray-700;
+    padding: 12px 0;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+  }
+
+  .formatted-article-content .table-row strong {
+    @apply text-gray-900 min-w-0 flex-shrink-0;
+    margin-right: 12px;
+    color: #374151;
   }
 
   .formatted-article-content .conclusion {
-    @apply text-lg font-medium mt-8 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-indigo-900 leading-relaxed;
+    @apply text-lg font-medium mt-8 p-6 rounded-xl text-indigo-900 leading-relaxed;
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+    border: 1px solid #c7d2fe;
+    font-style: italic;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   }
 
   .formatted-article-content p {
-    @apply mb-4 text-gray-700 leading-relaxed;
+    @apply mb-6 text-gray-700 leading-relaxed;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* Additional professional styling */
+  .formatted-article-content {
+    counter-reset: section;
+  }
+
+  .formatted-article-content h3::before {
+    counter-increment: section;
+    content: counter(section, decimal) ". ";
+    color: #6366f1;
+    font-weight: bold;
+  }
+
+  /* Better spacing and typography */
+  .formatted-article-content > *:first-child {
+    margin-top: 0;
+  }
+
+  .formatted-article-content > *:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .formatted-article-content {
+      @apply text-sm;
+    }
+    
+    .formatted-article-content .lead-paragraph {
+      @apply text-lg;
+    }
+    
+    .formatted-article-content h3 {
+      @apply text-xl;
+    }
   }
 }

@@ -8,16 +8,16 @@ export interface Resource {
 
 export const resourcesData: Resource[] = [
   {
-    title: " Desygner",
+    title: "ChatGPT",
     category: "AI Tools",
     description: "comprehensive AI text and image creation platform with advanced features.",
     link: "https://desygner.com/ai-powered-design/"
   },
   {
-    title: "Picktochart"
+    title: "Canva",
     category: "Design Tools",
-    description: "quality infographics from any prompt—no design expertise needed.
-    link: "https://piktochart.com/generative-ai/"
+    description: "A free graphic design platform that allows users to create professional-looking presentations, social media graphics, and more without design experience.",
+    link: "https://www.canva.com/"
   },
   {
     title: "Khan Academy",
@@ -34,8 +34,8 @@ export const resourcesData: Resource[] = [
   {
     title: "Consensus",
     category: "Education",
-    description: "AI-powered academic search engine"
-    link: "https://consensus.app/"
+    description: "Platform offering free courses from top universities and companies. Great for expanding knowledge in business, technology, and more.",
+    link: "https://www.coursera.org/"
   },
   {
     title: "Grammarly",
