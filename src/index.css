@@ -115,7 +115,65 @@
     @apply bg-pink-100 text-news-politics hover:bg-pink-200;
   }
   
-  .category-sports {
-    @apply bg-blue-100 text-news-sports hover:bg-blue-200;
+  .category-ai {
+    @apply bg-green-100 text-green-700 hover:bg-green-200;
+  }
+
+  /* Formatted Article Content Styles */
+  .formatted-article-content {
+    @apply text-base leading-relaxed;
+  }
+
+  .formatted-article-content .lead-paragraph {
+    @apply text-lg font-medium mb-6 text-gray-900 leading-relaxed;
+  }
+
+  .formatted-article-content h3 {
+    @apply text-xl font-bold mt-8 mb-4 text-gray-900 border-b border-gray-200 pb-2;
+  }
+
+  .formatted-article-content h4 {
+    @apply text-lg font-semibold mt-6 mb-3 text-gray-800;
+  }
+
+  .formatted-article-content ul {
+    @apply mb-6 space-y-3;
+  }
+
+  .formatted-article-content li {
+    @apply ml-4 pl-2 text-gray-700 leading-relaxed;
+    position: relative;
+  }
+
+  .formatted-article-content li::before {
+    content: "•";
+    color: #6366f1;
+    font-weight: bold;
+    position: absolute;
+    left: -16px;
+  }
+
+  .formatted-article-content strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  .formatted-article-content .note {
+    @apply bg-blue-50 border-l-4 border-blue-400 p-4 mb-6 text-blue-800 italic;
+  }
+
+  .formatted-article-content .payout-table {
+    @apply bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6;
+  }
+
+  .formatted-article-content .table-row {
+    @apply py-2 border-b border-gray-200 last:border-b-0 text-gray-700;
+  }
+
+  .formatted-article-content .conclusion {
+    @apply text-lg font-medium mt-8 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-indigo-900 leading-relaxed;
+  }
+
+  .formatted-article-content p {
+    @apply mb-4 text-gray-700 leading-relaxed;
   }
 }

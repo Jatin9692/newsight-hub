@@ -11,7 +11,7 @@ export interface NewsDataType {
   finance: NewsArticle[];
   marketing: NewsArticle[];
   politics: NewsArticle[];
-  sports: NewsArticle[];
+  ai: NewsArticle[];
 }
 
 export const newsData: NewsDataType = {
@@ -54,9 +54,9 @@ BluSmart’s sudden fall—from a poster child of electric mobility to a caution
       readTime: 3
     },
     {
-      title: "RBI’s ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
+      title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
       source: "Business Today",
-      summary: " `The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. 
+      summary: "summary: `The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. 
 This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24 
 
 Reasons Behind the Record Transfer
@@ -65,7 +65,7 @@ Reasons Behind the Record Transfer
 
 Note: Despite paying out a larger dividend, the RBI maintains a robust CRB (now 7.5%)—well within the 4.5–7.5% range set by the revised ECF—ensuring a buffer for contingencies.
 
-Key Details of  Payout
+Key Details of the Payout
 Fiscal Year    Dividend Transferred   CRB Maintained
 2022-23        ₹87,416 crore           6.0%
 2023-24        ₹2.10 lakh crore        6.5%
@@ -300,74 +300,26 @@ Shivakumar’s ₹25 lakh donation confession spotlights how party-affiliated ne
       readTime: 3
     }
   ],
-  AI:[
+  sports: [
     {
-      title: "Google I/O 2025: The AGI Wave Begins",
+      title: "Championship Finals Break Viewership Records",
       source: "Sports Network",
-      summary: "𝐆𝐨𝐨𝐠𝐥𝐞’𝐬 𝐈/𝐎 2025 didn’t just make headlines. It shook industries. 
-
-From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.
-
-Here’s the quick highlight reel:
-
-• 𝐀𝐈 𝐌𝐨𝐝𝐞 𝐢𝐧 𝐆𝐨𝐨𝐠𝐥𝐞 𝐒𝐞𝐚𝐫𝐜𝐡– Say goodbye to blue links. Google introduced a new "AI Mode" for its Search platform, transforming traditional search queries into conversational interactions. (Bye-Bye Perplexity)
-
-• 𝐑𝐞𝐚𝐥-𝐓𝐢𝐦𝐞 𝐌𝐞𝐞𝐭 𝐓𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐢𝐨𝐧 – No more language barriers ever again. You speak in English they hear in perfect Spanish. No lag , no subtitles.
-
-• 𝐓𝐫𝐲-𝐎𝐧 𝐀𝐈 𝐒𝐡𝐨𝐩𝐩𝐢𝐧𝐠 – Upload your pic → And you can virtually try on any clothes
-• Agent Mode in Gemini – AI assistant to handle real-world tasks- Finds your flat, plans your trip, books your table.
-
-•  𝐕𝐞𝐨 3 & 𝐅𝐥𝐨𝐰 – One prompt = Hollywood-level videos with scenes & sound.
-
-• 𝐉𝐮𝐥𝐞𝐬 – An AI dev that updates your GitHub with a single English prompt
-
-• 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐀𝐬𝐭𝐫𝐚– Camera-based AI that can search and act on your behalf.
-
-Also in the mix:
-
-𝐆𝐨𝐨𝐠𝐥𝐞 𝐃𝐢𝐟𝐟𝐮𝐬𝐢𝐨𝐧: Codes 15x faster than LLMs.
-𝐒𝐭𝐢𝐭𝐜𝐡: From prompt to Figma UI.
-𝐒𝐢𝐠𝐧𝐆𝐞𝐦𝐦𝐚: Real-time sign language translation.
-
-Google is not playing around.
-𝐓𝐡𝐞 𝐀𝐆𝐈 𝐰𝐚𝐯𝐞 𝐢𝐬 𝐫𝐞𝐚𝐥 — 𝐚𝐧𝐝 𝐆𝐨𝐨𝐠𝐥𝐞 𝐦𝐢𝐠𝐡𝐭 𝐣𝐮𝐬𝐭 𝐛𝐞 𝐥𝐞𝐚𝐝𝐢𝐧𝐠 𝐭𝐡𝐞 𝐩𝐚𝐜𝐤
-      date: "may 24,2025
+      summary: "The finals series attracted the largest global audience in the sport's history, with streaming numbers showing particularly strong growth among younger demographics.",
+      date: "Sep 14, 2023",
       readTime: 3
     },
     {
-      title: "OpenAI Acquires Windsurf for $3 Billion: A Game-Changer in Vibe Coding
-      source: "TechCrunch",
-      summary: "OpenAI agreed to acquire Windsurf for about $3 billion, marking its largest acquisition to date. This move is expected to enhance OpenAI's capabilities in AI-assisted coding (Vibe coding) and strengthen its position in the competitive AI development tools market.
-OpenAI initially aimed to acquire Anysphere, the creator of the AI coding assistant Cursor. However, Anysphere declined OpenAI's acquisition offers, preferring to remain independent and pursue additional funding at a valuation of about $10 billion.
-Subsequently, OpenAI turned its attention to Windsurf (formerly known as Codeium), another AI coding assistant startup. Windsurf had an ARR of approximately $100 million and was experiencing significant growth. 
-The high valuations of Windsurf reflect the growing importance and value of AI-assisted coding tools in the software development industry.
-This acquisition may prompt other major players in the AI industry to consider similar acquisitions or partnerships to strengthen their positions in the AI development tools sector.
-India, with its large pool of software developers and growing tech industry, stands to benefit from advancements in AI-assisted coding tools
-Bottom Line:
-OpenAI's acquisition of Windsurf underscores the strategic importance of AI-assisted coding tools in the modern software development landscape. 
-This move not only enhances OpenAI's capabilities but also reflects the broader trend of competition in the AI tools market, with significant implications for developers and tech industries worldwide, including in India.
-
-      date: "may 24,2025
+      title: "Analytics Revolution Changes Team Recruitment Strategies",
+      source: "Sports Analytics Weekly",
+      summary: "Professional teams are increasingly relying on advanced data metrics to identify talent, resulting in surprising draft picks and transfer decisions that challenge conventional wisdom.",
+      date: "Sep 11, 2023",
       readTime: 5
     },
     {
-      title: "OpenAI Acquires Jony Ive’s AI Hardware Startup io for $6.5 Billion: A Game-Changer in AI Integration",
-      source: "techCrunch",
-      summary: "OpenAI has acquired the AI hardware startup io, founded by former Apple design chief Jony Ive, in a deal valued at $6.5 billion. 
-This acquisition brings together OpenAI's AI expertise with Ive's renowned design skills. The io team, comprising 55 members including former Apple engineers and designers, will now work closely with OpenAI's research and engineering teams in San Francisco.
-The collaboration aims to develop innovative AI hardware devices that move beyond traditional screens and interfaces. The goal is to create products that seamlessly integrate AI into daily life, potentially redefining how users interact with technology. 
-
-OpenAI's acquisition of io signifies a strategic move to expand beyond software and enter the hardware domain.
-By partnering with Jony Ive and his team, OpenAI emphasizes the importance of design and user-centric approaches in developing future AI products.
-
-Reason Behind the Move:
-OpenAI seeks to make AI more accessible and integrated into everyday life
-. By acquiring io and collaborating with experienced hardware designers, OpenAI aims to create devices that offer natural and intuitive interactions with AI, moving beyond the limitations of current screen-based interfaces
-________________________________________
-Bottom Line:
-OpenAI's acquisition of Jony Ive's io represents a significant step towards integrating AI into everyday hardware. This collaboration aims to redefine user interactions with technology, moving towards more natural and intuitive experiences. 
-
-      date: "may 24,2025",
+      title: "Student Athletes Benefit from New Endorsement Rules",
+      source: "College Sports Today",
+      summary: "Recent policy changes allowing college athletes to profit from their name, image, and likeness are creating unprecedented opportunities for students across various sports.",
+      date: "Sep 9, 2023",
       readTime: 4
     }
   ]

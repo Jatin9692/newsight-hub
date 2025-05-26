@@ -1,14 +1,14 @@
-
 import React from 'react';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
+import { 
+  Dialog, 
+  DialogContent, 
+  DialogDescription, 
+  DialogHeader, 
+  DialogTitle, 
+  DialogTrigger 
 } from "@/components/ui/dialog";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { ExternalLink } from 'lucide-react';
 
 interface AITool {
@@ -24,18 +24,18 @@ const aiTools: AITool[] = [
     url: "https://elevenlabs.io/"
   },
   {
-    name: "Midjourney",
+    name: "Midjourney", 
     description: "Create stunning AI-generated images from text descriptions.",
     url: "https://www.midjourney.com/"
   },
   {
-    name: "Lumini
-    description: "The best free stock photos and royalty free images. Powered by robots everywhere.
+    name: "Lummi",
+    description: "The best free stock photos and royalty free images. Powered by robots everywhere.",
     url: "https://www.lummi.ai/"
   },
   {
     name: "Otter.ai",
-    description: "AI-powered transcription and note-taking to capture important conversations.",
+    description: "AI-powered transcription and note-taking to capture important conversations.", 
     url: "https://otter.ai/"
   },
   {
@@ -47,14 +47,14 @@ const aiTools: AITool[] = [
 
 interface AIToolsDialogProps {
   triggerId?: string;
-  children: React.ReactNode; // Add the children prop to the interface
+  children?: React.ReactNode;
 }
 
 const AIToolsDialog = ({ triggerId, children }: AIToolsDialogProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild id={triggerId}>
-        {children}
+        {children || <Button variant="outline">View AI Tools</Button>}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
@@ -67,8 +67,8 @@ const AIToolsDialog = ({ triggerId, children }: AIToolsDialogProps) => {
           {aiTools.map((tool) => (
             <Card key={tool.name} className="p-4 hover:shadow-md transition-shadow group">
               <a 
-                href={tool.url} 
-                target="_blank" 
+                href={tool.url}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col space-y-1"
               >
