@@ -11,29 +11,29 @@ const newsItems = [
     id: 1,
     title: "Crowning Moment: Nvidia Tops Microsoft as the World's Most Valuable Company at $3.45T",
     summary: `<div class="article-content">
-      <p class="lead-paragraph">Nvidia has become the world's most valuable company, overtaking Microsoft. On June 3, 2025, its stock price rose by 3.4%, making Nvidia worth around $3.45 trillion, just ahead of Microsoft at $3.44 trillion.</p>
+      <p class="lead-paragraph"><strong>Nvidia</strong> has become the world's most valuable company, overtaking <strong>Microsoft</strong>. On June 3, 2025, its stock price rose by 3.4%, making <strong>Nvidia</strong> worth around <strong>$3.45 trillion</strong>, just ahead of <strong>Microsoft</strong> at <strong>$3.44 trillion</strong>.</p>
       
-      <p>This growth is mainly due to strong demand for Nvidia's AI chips. In the last quarter, Nvidia earned $44.1 billion, a 69% increase compared to last year. Even with global challenges like tariffs, Nvidia made $4.6 billion just from its new AI chip, the H20.</p>
+      <p>This growth is mainly due to strong demand for <strong>Nvidia's AI chips</strong>. In the last quarter, <strong>Nvidia</strong> earned <strong>$44.1 billion</strong>, a 69% increase compared to last year. Even with global challenges like tariffs, <strong>Nvidia</strong> made <strong>$4.6 billion</strong> just from its new AI chip, the <strong>H20</strong>.</p>
       
-      <p>Nvidia is also investing in AI infrastructure. It plans to spend $500 billion over the next 4 years on building AI systems, supercomputers, and data centers. It has started making its Blackwell chips in Arizona and is building a huge Texas campus with Foxconn.</p>
+      <p><strong>Nvidia</strong> is also investing in AI infrastructure. It plans to spend <strong>$500 billion over the next 4 years</strong> on building AI systems, supercomputers, and data centers. It has started making its <strong>Blackwell chips</strong> in <strong>Arizona</strong> and is building a huge <strong>Texas campus</strong> with <strong>Foxconn</strong>.</p>
       
-      <p>Internationally, Nvidia is building the largest AI data center network outside the U.S. called Stargate UAE, with partners like OpenAI, Oracle, SoftBank, and Cisco. Nvidia's chips are also used by big cloud companies like Google, Microsoft Azure, AWS, and Oracle.</p>
+      <p>Internationally, <strong>Nvidia</strong> is building the largest AI data center network outside the U.S. called <strong>Stargate UAE</strong>, with partners like <strong>OpenAI</strong>, <strong>Oracle</strong>, <strong>SoftBank</strong>, and <strong>Cisco</strong>. <strong>Nvidia's chips</strong> are also used by big cloud companies like <strong>Google</strong>, <strong>Microsoft Azure</strong>, <strong>AWS</strong>, and <strong>Oracle</strong>.</p>
       
       <h3><strong>Why This Happened</strong></h3>
       <ol>
         <li><strong>Huge AI Chip Demand</strong>
           <ul>
-            <li>Companies are using more AI tools (like ChatGPT), which need powerful chips. Nvidia's H20 and Blackwell chips are in high demand.</li>
+            <li>Companies are using more AI tools (like <strong>ChatGPT</strong>), which need powerful chips. <strong>Nvidia's H20</strong> and <strong>Blackwell chips</strong> are in high demand.</li>
           </ul>
         </li>
         <li><strong>Smart Investments in Infrastructure</strong>
           <ul>
-            <li>By building factories in the U.S., Nvidia is avoiding global trade issues. New data centers (like Stargate UAE) help expand into new markets.</li>
+            <li>By building factories in the U.S., <strong>Nvidia</strong> is avoiding global trade issues. New data centers (like <strong>Stargate UAE</strong>) help expand into new markets.</li>
           </ul>
         </li>
       </ol>
       
-      <p class="conclusion">Nvidia's rise signals a shift in investor interest from software to companies that build the core of AI technology, showing that AI hardware companies are now just as important as software giants like Microsoft.</p>
+      <p class="conclusion"><strong>Nvidia's</strong> rise signals a shift in investor interest from software to companies that build the core of AI technology, showing that AI hardware companies are now just as important as software giants like <strong>Microsoft</strong>.</p>
     </div>`,
     category: "finance",
     date: "june 3, 2025",
@@ -44,24 +44,24 @@ const newsItems = [
     id: 2,
     title: "Stampede Shocks Bengaluru: Devastating Chaos at RCB Felicitation",
     summary: `<div class="article-content">
-      <p class="lead-paragraph">Yesterday evening, thousands of passionate <strong>Royal Challengers Bengaluru (RCB)</strong> fans poured into the heart of Bengaluru to celebrate their team's success in the IPL.</p>
+      <p class="lead-paragraph">Yesterday evening, thousands of passionate <strong>Royal Challengers Bengaluru (RCB)</strong> fans poured into the heart of <strong>Bengaluru</strong> to celebrate their team's success in the IPL.</p>
       
       <p>By mid‐afternoon, the crowd reached to nearly <strong>100,000 people</strong>, many pressing against barricades, climbing walls. Desperate to see their favorite players, fans tried to force their way through gates and hop fences. In a matter of moments, the crowd surged like a wave, and people at the front were pushed and crushed against metal barriers.</p>
       
       <p>Within seconds, what had been a celebration turned into a nightmare. Reports say <strong>11 people lost their lives and 47 were injured</strong>, some fatally, as they were suffocated in the press of bodies.</p>
       
-      <p><strong>Vidhana Soudha</strong> and <strong>M. Chinnaswamy Stadium</strong> sit in one of Bengaluru's busiest central districts. Narrow roads, limited open space, and key traffic arteries left no room for emergency vehicles to quickly reach the scene. Bystanders and police tried to give CPR or break up the crush with lathis, but there were simply too many people in too little space.</p>
+      <p><strong>Vidhana Soudha</strong> and <strong>M. Chinnaswamy Stadium</strong> sit in one of <strong>Bengaluru's</strong> busiest central districts. Narrow roads, limited open space, and key traffic arteries left no room for emergency vehicles to quickly reach the scene. Bystanders and police tried to give CPR or break up the crush with <strong>lathis</strong>, but there were simply too many people in too little space.</p>
       
-      <p>Organizers underestimated how many fans would turn up, without proper crowd estimates, there were no extra barricades or police posted. In reality, there were not enough entry gates or controlled passages to direct everyone safely. Police manpower was stretched thin. At peak crush, very few officers were at each critical spot, and when fans––some unconnected to RCB––saw an opening, they surged in, overwhelming the scene.</p>
+      <p>Organizers underestimated how many fans would turn up, without proper crowd estimates, there were no extra barricades or police posted. In reality, there were not enough entry gates or controlled passages to direct everyone safely. Police manpower was stretched thin. At peak crush, very few officers were at each critical spot, and when fans––some unconnected to <strong>RCB</strong>––saw an opening, they surged in, overwhelming the scene.</p>
       
-      <p>This tragedy is a grim reminder that even in a modern city like Bengaluru—public infrastructure can become dangerously inadequate when massive crowds gather spontaneously.</p>
+      <p>This tragedy is a grim reminder that even in a modern city like <strong>Bengaluru</strong>—public infrastructure can become dangerously inadequate when massive crowds gather spontaneously.</p>
       
       <h3><strong>Our Thoughts</strong></h3>
       <p>It is almost unbelievable that a joyous occasion—fans gathering to celebrate <strong>RCB's cricket heroes</strong>—ended with parents weeping for lost children, and a city mourning <strong>11 precious lives</strong>. Families who came to celebrate are now planning funerals. One grandmother lost her <strong>14‐year‐old granddaughter</strong> who had turned pale after being shoved to the ground.</p>
       
-      <p>For Bengaluru, IPL organizers, the <strong>BCCI</strong>, and <strong>RCB</strong> itself, this is a wake-up call. Cricket is our passion, RCB is our pride—but lives are irreplaceable. May the memory of those we lost inspire better planning so no family ever faces this kind of agony again.</p>
+      <p>For <strong>Bengaluru</strong>, IPL organizers, the <strong>BCCI</strong>, and <strong>RCB</strong> itself, this is a wake-up call. Cricket is our passion, <strong>RCB</strong> is our pride—but lives are irreplaceable. May the memory of those we lost inspire better planning so no family ever faces this kind of agony again.</p>
       
-      <p class="conclusion">Stay safe, Bengaluru. May those we lost find peace, and may their families find strength in our collective sorrow.</p>
+      <p class="conclusion">Stay safe, <strong>Bengaluru</strong>. May those we lost find peace, and may their families find strength in our collective sorrow.</p>
     </div>`,
     category: "General",
     date: "may 25, 2025",
@@ -117,47 +117,63 @@ const newsItems = [
   },
   {
     id: 4,
-    title: "Porter Joins the Unicorn Club with $200M Boost—India's Logistics Star Rises",
+    title: "Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals",
     summary: `<div class="article-content">
-      <p class="lead-paragraph">Porter—India's own on-demand urban logistics platform—has just raised $200 million in its latest funding round led by Kedaara Capital and Wellington Management, valuing the company at $1.1–1.2 billion.</p>
+      <p class="lead-paragraph"><strong>Flipkart</strong>, the <strong>Walmart-backed</strong> e-commerce giant, sold two of its investments this week:</p>
       
-      <p>This makes Porter India's third unicorn of 2025 (after Netradyne and Juspay) and its third of 2024 (alongside Krutrim AI and Perfios). Porter offers mini-truck and two-wheeler delivery services within cities, primarily serving small businesses (MSMEs).</p>
+      <ol>
+        <li><strong>9% stake in Blackbuck</strong> (via its subsidiary <strong>Quikroutes International</strong>) for <strong>₹672 crore</strong></li>
+        <li><strong>6% stake in Aditya Birla Fashion & Retail (ABFRL)</strong> for <strong>₹587.7 crore</strong></li>
+      </ol>
       
-      <h3>Key Financial Metrics</h3>
-      <div class="payout-table">
-        <div class="table-row"><strong>Revenue:</strong> ₹4,000 crore (up from ₹2,766 crore in FY 24)</div>
-        <div class="table-row"><strong>Loss:</strong> ₹96 crore (narrowed from ₹175 crore in FY 23)</div>
-        <div class="table-row"><strong>Geography:</strong> Present in 22+ Indian cities; exploring peer-to-peer parcel delivery</div>
-      </div>
-      
-      <h3>Insights</h3>
       <ul>
-        <li><strong>Strong Secondary Market Demand:</strong> Early investors cashed out, signalling confidence from new and existing backers.</li>
-        <li><strong>Rapid Growth:</strong> Revenues jumped ~45% year-on-year while cutting losses by ~45%, showing improving unit economics.</li>
-        <li><strong>Unicorn Wave in Logistics:</strong> Porter joins a select group of logistics unicorns, reflecting rising investor interest in tech-enabled supply-chain solutions.</li>
+        <li>In total, <strong>Flipkart</strong> cashed out <strong>₹1,259.7 crore</strong> through these "block deals" (large, institutional share trades) as the stock market gained after a slow start to the year.</li>
+        <li>Both deals happened at slight discounts to recent trading prices, reflecting broader market conditions.</li>
+        <li><strong>Blackbuck</strong> (logistics tech) was an early investment (around 2014–2015), but <strong>Flipkart</strong> may now believe its capital and management bandwidth is better spent on core businesses—like expanding its e-commerce, grocery, or fintech operations.</li>
+        <li><strong>ABFRL</strong> (fashion retailer) is only tangentially related to <strong>Flipkart's</strong> core commerce business, so they likely chose to return that capital to shareholders or redeploy it elsewhere.</li>
       </ul>
       
-      <h4>Reasons Behind the Raise</h4>
+      <h3><strong>Reasons Behind the Sales</strong></h3>
+      <h4><strong>Market Recovery & Secondary Deal Frenzy</strong></h4>
       <ul>
-        <li><strong>Scale & Reach:</strong> Fuel expansion into more cities, new delivery categories (P2P parcels), and deeper tech investments (AI, route optimization).</li>
-        <li><strong>Market Positioning:</strong> Porter stayed ahead of competitors like Dunzo, Rapido, and Uber by strengthening network density and reducing per-order costs.</li>
+        <li>At the beginning of 2025, Indian equities (publicly traded stocks) saw a sharp decline. In April–May, though, the market began to recover. When stock prices bounce back, promoters (original backers), private equity (PE) firms, and strategic investors—often use that window to trim or exit some positions.</li>
+        <li><strong>Flipkart</strong> joined this wave, choosing now to monetize (sell) stakes that were acquired years ago.</li>
       </ul>
       
-      <h3>Macro & Micro Market Context</h3>
-      <div class="payout-table">
-        <div class="table-row"><strong>Macro:</strong> Investors still back Indian startups despite global slowdown; logistics remains a key growth sector. India is producing multiple unicorns yearly, underlining the country's maturing startup ecosystem.</div>
-        <div class="table-row"><strong>Micro:</strong> Porter's success spotlights rising demand from MSMEs for reliable, tech-driven local delivery. Secondary transactions imply a liquid employee-share market, rewarding early team members.</div>
-      </div>
+      <h4><strong>Declining Share Prices & Need to Sell at "Recovery" Levels</strong></h4>
+      <ul>
+        <li><strong>ABFRL's</strong> share price dropped by about <strong>11.5%</strong> right before <strong>Flipkart</strong> sold, dipping to <strong>₹76.10</strong> on the BSE (Bombay Stock Exchange). By executing the block deal at <strong>₹80.32</strong>—a small discount to the previous close—<strong>Flipkart</strong> locked in an acceptable price before any further fall.</li>
+        <li>In <strong>Blackbuck's</strong> case, the company's early-growth stage had given way to slower growth and profitability concerns in recent quarters. <strong>Flipkart</strong> may have recognized that holding on could risk further value erosion.</li>
+      </ul>
       
-      <h3>Consequences & Impact</h3>
-      <div class="payout-table">
-        <div class="table-row"><strong>Porter:</strong> Gains capital for expansion, product innovation, and margin improvement.</div>
-        <div class="table-row"><strong>MSMEs & Consumers:</strong> Better, faster intra-city deliveries and potentially more competitive pricing as Porter scales.</div>
-        <div class="table-row"><strong>Competitors:</strong> Intensifies the battle for urban logistics; may spur M&A or pricing competition.</div>
-        <div class="table-row"><strong>Labor/Gig Workers:</strong> Potential for more gig-economy earnings as Porter expands its network and service offerings.</div>
-      </div>
+      <p>By exiting non-core assets (logistics tech and fashion retail), <strong>Flipkart</strong> can free up cash to invest in strengthening its own supply chain, technology platforms, marketing, and new segments like grocery or fintech.</p>
       
-      <p class="conclusion">Porter's $200 million raise and unicorn valuation underline the strong momentum in India's tech-enabled logistics space. Backed by top private equity firms and a clear path to profitability, Porter is well-positioned to deepen its urban footprint, support small businesses, and influence how India moves goods within its cities.</p>
+      <p>As markets recover, other promoters and PEs will likely trim their stakes in public or large private companies.</p>
+      
+      <h3><strong>Consequences & Implications</strong></h3>
+      
+      <h4><strong>For Flipkart</strong></h4>
+      <ul>
+        <li><strong>Stronger Balance Sheet, More Firesale Cash:</strong> With <strong>₹1,250 crore</strong> freshly unlocked, <strong>Flipkart</strong> can:
+          <ul>
+            <li>Pursue upgrades in its technology .Enhance its logistics network and may ramp up marketing and customer-acquisition spending</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h4><strong>For the Industry & Ecosystem</strong></h4>
+      
+      <h4><strong>Logistics Tech Sector</strong></h4>
+      <p><strong>Maturing Bubble:</strong> Early 2020s saw sky-high valuations for logistics tech (delivery aggregators, fleet management, SaaS solutions). This exit highlights that the hype has cooled</p>
+      
+      <h4><strong>Fashion Retail Sector</strong></h4>
+      <p><strong>Cautious Investor Appetite:</strong> Large PE or strategic investors will be more selective, focusing on companies with:</p>
+      <ul>
+        <li>Omni-channel presence (both online + offline)</li>
+        <li>Proven traction in value-conscious segments (fast fashion or affordable brands)</li>
+      </ul>
+      
+      <p class="conclusion">In short, <strong>Flipkart's</strong> <strong>₹1,250-crore exit</strong> from <strong>Blackbuck</strong> and <strong>ABFRL</strong> is both a sign of India's maturing start-up and retail ecosystem—and a demonstration that even big players must constantly reassess where they put their money. This move sharpens <strong>Flipkart's</strong> focus on core e-commerce goals while sending a clear message: "Investors must show real growth, profits, or face portfolio trimming when markets improve."</p>
     </div>`,
     category: "Finance",
     date: "may 24, 2025",
