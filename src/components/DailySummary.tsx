@@ -9,35 +9,28 @@ import { ArrowRight } from 'lucide-react';
 const newsItems = [
   {
     id: 1,
-    title: "Trump to Apple: Build in the USA or Pay the Price – iPhone Costs Could Skyrocket",
+    title: "Crowning Moment: Nvidia Tops Microsoft as the World's Most Valuable Company at $3.45T",
     summary: `<div class="article-content">
-      <p class="lead-paragraph">U.S. President Donald Trump has threatened to slap a 25% tariff (extra tax) on any iPhones sold in America that aren't made in the U.S. Following from earlier, he urged Apple's CEO, Tim Cook, to ensure that iPhone production happens on American soil—otherwise customers here will pay much more.</p>
+      <p class="lead-paragraph">Nvidia has become the world's most valuable company, overtaking Microsoft. On June 3, 2025, its stock price rose by 3.4%, making Nvidia worth around $3.45 trillion, just ahead of Microsoft at $3.44 trillion.</p>
       
-      <p>Apple's stock fell sharply after the announcement. Companies like Apple juggle multiple factories worldwide; this could force costly shifts, putting global supply chain at risk.</p>
+      <p>This growth is mainly due to strong demand for Nvidia's AI chips. In the last quarter, Nvidia earned $44.1 billion, a 69% increase compared to last year. Even with global challenges like tariffs, Nvidia made $4.6 billion just from its new AI chip, the H20.</p>
       
-      <h3>Why Trump Did This</h3>
+      <p>Nvidia is also investing in AI infrastructure. It plans to spend $500 billion over the next 4 years on building AI systems, supercomputers, and data centers. It has started making its Blackwell chips in Arizona and is building a huge Texas campus with Foxconn.</p>
+      
+      <p>Internationally, Nvidia is building the largest AI data center network outside the U.S. called Stargate UAE, with partners like OpenAI, Oracle, SoftBank, and Cisco. Nvidia's chips are also used by big cloud companies like Google, Microsoft Azure, AWS, and Oracle.</p>
+      
+      <h3>Why This Happened</h3>
       <ul>
-        <li><strong>Protect American Jobs:</strong> By forcing Apple to build phones in the U.S., more factory jobs would stay here.</li>
-        <li><strong>Leverage in Trade Negotiations:</strong> It puts pressure on Apple (and indirectly on India) during broader trade discussions.</li>
-        <li><strong>Bring Manufacturing Home:</strong> He wants major companies to "re-shore" production to the U.S. instead of overseas.</li>
+        <li><strong>Huge AI Chip Demand:</strong> Companies are using more AI tools (like ChatGPT), which need powerful chips. Nvidia's H20 and Blackwell chips are in high demand.</li>
+        <li><strong>Smart Investments in Infrastructure:</strong> By building factories in the U.S., Nvidia is avoiding global trade issues. New data centers (like Stargate UAE) help expand into new markets.</li>
       </ul>
       
-      <h3>Consequences & Impact</h3>
-      <div class="payout-table">
-        <div class="table-row"><strong>Consumers in US:</strong> Could see higher prices on iPhones—25% more if made abroad.</div>
-        <div class="table-row"><strong>Apple:</strong> Faces the choice to relocate production, absorb higher costs, or pay hefty tariffs.</div>
-        <div class="table-row"><strong>Indian Factories:</strong> May lose business if Apple shifts orders back to the U.S., slowing India's tech growth.</div>
-        <div class="table-row"><strong>U.S.-India Relations:</strong> Adds tension to ongoing trade talks; India might demand concessions elsewhere.</div>
-        <div class="table-row"><strong>American Workers:</strong> Could gain jobs if factories return—but this takes time and huge investment.</div>
-        <div class="table-row"><strong>Global Trade:</strong> Signals rising protectionism, risking retaliatory tariffs and more trade barriers.</div>
-      </div>
-      
-      <p class="conclusion">If Trump follows through, iPhones made in India (or China) will cost more in the U.S. Thus, Apple must decide whether to shift production back to the U.S. or absorb/pass on the extra tax. This could also make trade talks between the U.S. and India more complex, as India defends its manufacturing sector.</p>
+      <p class="conclusion">Nvidia's rise signals a shift in investor interest from software to companies that build the core of AI technology, showing that AI hardware companies are now just as important as software giants like Microsoft.</p>
     </div>`,
     category: "finance",
-    date: "may 24, 2025",
-    readTime: 2,
-    source: "Economic Times"
+    date: "june 3, 2025",
+    readTime: 3,
+    source: "Financial Times"
   },
   {
     id: 2,
