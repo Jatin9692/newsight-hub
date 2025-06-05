@@ -250,7 +250,7 @@ export const newsData: NewsDataType = {
         
         <p>With Over 1,000 brands expected to join in weeks, Zepto has truly disrupted 𝐂𝐨𝐧𝐬𝐮𝐦𝐞𝐫 𝐚𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬 in India.</p>
         
-        <p class="conclusion">Brands get insights to make smarter products & marketing and Zepto gets a new revenue stream, and you (as a customer) may see more relevant products and offers on your app. 𝘈 𝘵𝘳𝘪𝘱𝘭𝘦 𝘸𝘪𝘯 — 𝘧𝘰𝘳 𝘡𝘦𝘱𝘵𝘰, 𝘣𝘳𝘢𝘯𝘥𝘴, 𝘢𝘯𝘥 𝘤𝘰𝘯𝘴𝘶𝘮𝘦𝘳𝘴 — 𝘢𝘯𝘥 𝘪𝘵'𝘴 𝘯𝘰𝘵 𝘦𝘷𝘦𝘯 𝘤𝘭𝘰𝘴𝘦</p>
+        <p class="conclusion">Brands get insights to make smarter products & marketing and Zepto gets a new revenue stream, and you (as a customer) may see more relevant products and offers on your app. 𝘈 𝘵𝘳𝘪𝘱𝘭𝘦 𝘸𝘪𝘯 — 𝘧𝘰𝘳 𝘡𝘦𝘱𝘵𝘰, 𝘣𝘳𝘢𝘯𝘥𝘴, 𝘢𝘯𝘥 𝘤𝘰𝘯𝘴𝘶𝘮𝘦𝘳𝘴 — 𝘢𝘯𝘥 𝘪𝘵'𝘴 𝘯𝘰𝘵 𝘦𝘷𝘦𝘯 𝘤𝘭𝘰𝐬𝐞</p>
       </div>`,
       date: "Sep 9, 2023",
       readTime: 3
@@ -413,29 +413,6 @@ export const newsData: NewsDataType = {
       </div>`,
       date: "Sep 10, 2023",
       readTime: 3
-    }
-  ],
-  sports: [
-    {
-      title: "Championship Finals Break Viewership Records",
-      source: "Sports Network",
-      summary: "The finals series attracted the largest global audience in the sport's history, with streaming numbers showing particularly strong growth among younger demographics.",
-      date: "Sep 14, 2023",
-      readTime: 3
-    },
-    {
-      title: "Analytics Revolution Changes Team Recruitment Strategies",
-      source: "Sports Analytics Weekly",
-      summary: "Professional teams are increasingly relying on advanced data metrics to identify talent, resulting in surprising draft picks and transfer decisions that challenge conventional wisdom.",
-      date: "Sep 11, 2023",
-      readTime: 5
-    },
-    {
-      title: "Student Athletes Benefit from New Endorsement Rules",
-      source: "College Sports Today",
-      summary: "Recent policy changes allowing college athletes to profit from their name, image, and likeness are creating unprecedented opportunities for students across various sports.",
-      date: "Sep 9, 2023",
-      readTime: 4
     }
   ]
 };

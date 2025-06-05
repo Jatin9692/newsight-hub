@@ -34,6 +34,34 @@ const newsItems = [
   },
   {
     id: 2,
+    title: "Stampede Shocks Bengaluru: Devastating Chaos at RCB Felicitation",
+    summary: `<div class="article-content">
+      <p class="lead-paragraph">Yesterday evening, thousands of passionate <strong>Royal Challengers Bengaluru (RCB)</strong> fans poured into the heart of Bengaluru to celebrate their team's success in the IPL.</p>
+      
+      <p>By mid‐afternoon, the crowd reached to nearly <strong>100,000 people</strong>, many pressing against barricades, climbing walls. Desperate to see their favorite players, fans tried to force their way through gates and hop fences. In a matter of moments, the crowd surged like a wave, and people at the front were pushed and crushed against metal barriers.</p>
+      
+      <p>Within seconds, what had been a celebration turned into a nightmare. Reports say <strong>11 people lost their lives and 47 were injured</strong>, some fatally, as they were suffocated in the press of bodies.</p>
+      
+      <p><strong>Vidhana Soudha</strong> and <strong>M. Chinnaswamy Stadium</strong> sit in one of Bengaluru's busiest central districts. Narrow roads, limited open space, and key traffic arteries left no room for emergency vehicles to quickly reach the scene. Bystanders and police tried to give CPR or break up the crush with lathis, but there were simply too many people in too little space.</p>
+      
+      <p>Organizers underestimated how many fans would turn up, without proper crowd estimates, there were no extra barricades or police posted. In reality, there were not enough entry gates or controlled passages to direct everyone safely. Police manpower was stretched thin. At peak crush, very few officers were at each critical spot, and when fans––some unconnected to RCB––saw an opening, they surged in, overwhelming the scene.</p>
+      
+      <p>This tragedy is a grim reminder that even in a modern city like Bengaluru—public infrastructure can become dangerously inadequate when massive crowds gather spontaneously.</p>
+      
+      <h3>Our Thoughts</h3>
+      <p>It is almost unbelievable that a joyous occasion—fans gathering to celebrate <strong>RCB's cricket heroes</strong>—ended with parents weeping for lost children, and a city mourning <strong>11 precious lives</strong>. Families who came to celebrate are now planning funerals. One grandmother lost her <strong>14‐year‐old granddaughter</strong> who had turned pale after being shoved to the ground.</p>
+      
+      <p>For Bengaluru, IPL organizers, the <strong>BCCI</strong>, and <strong>RCB</strong> itself, this is a wake-up call. Cricket is our passion, RCB is our pride—but lives are irreplaceable. May the memory of those we lost inspire better planning so no family ever faces this kind of agony again.</p>
+      
+      <p class="conclusion">Stay safe, Bengaluru. May those we lost find peace, and may their families find strength in our collective sorrow.</p>
+    </div>`,
+    category: "General",
+    date: "may 25, 2025",
+    readTime: 4,
+    source: "Bengaluru Times"
+  },
+  {
+    id: 3,
     title: "₹1.5 Lakh Crore Bet on the Northeast: Reliance, Adani & Vedanta to Spark Industrial Revolution in India's East",
     summary: `<div class="article-content">
       <p class="lead-paragraph">At the summit to boost Northeast India's growth, three big Indian companies—Reliance Industries (RIL), the Adani Group, and Vedanta—each announced they'll pour in ₹30,000–50,000 crore more into the region over the coming years.</p>
@@ -74,7 +102,7 @@ const newsItems = [
     source: "Economic Times"
   },
   {
-    id: 3,
+    id: 4,
     title: "Porter Joins the Unicorn Club with $200M Boost—India's Logistics Star Rises",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Porter—India's own on-demand urban logistics platform—has just raised $200 million in its latest funding round led by Kedaara Capital and Wellington Management, valuing the company at $1.1–1.2 billion.</p>
@@ -123,7 +151,7 @@ const newsItems = [
     source: "Angel One"
   },
   {
-    id: 4,
+    id: 5,
     title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
     summary: `<div class="article-content">
       <p class="lead-paragraph">The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24.</p>
@@ -175,7 +203,7 @@ const newsItems = [
     source: "Business Today"
   },
   {
-    id: 5,
+    id: 6,
     title: "𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚",
     summary: `<div class="article-content">
       <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞'𝐬 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
@@ -206,7 +234,7 @@ const newsItems = [
     source: "Business Today"
   },
   {
-    id: 6,
+    id: 7,
     title: "Financial sector embraces blockchain technology",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Major financial institutions are increasingly adopting blockchain solutions for transaction processing and record-keeping, marking a significant shift in how the banking industry approaches security and efficiency.</p>
