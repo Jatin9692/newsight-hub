@@ -19,11 +19,19 @@ const newsItems = [
       
       <p>Internationally, Nvidia is building the largest AI data center network outside the U.S. called Stargate UAE, with partners like OpenAI, Oracle, SoftBank, and Cisco. Nvidia's chips are also used by big cloud companies like Google, Microsoft Azure, AWS, and Oracle.</p>
       
-      <h3>Why This Happened</h3>
-      <ul>
-        <li><strong>Huge AI Chip Demand:</strong> Companies are using more AI tools (like ChatGPT), which need powerful chips. Nvidia's H20 and Blackwell chips are in high demand.</li>
-        <li><strong>Smart Investments in Infrastructure:</strong> By building factories in the U.S., Nvidia is avoiding global trade issues. New data centers (like Stargate UAE) help expand into new markets.</li>
-      </ul>
+      <h3><strong>Why This Happened</strong></h3>
+      <ol>
+        <li><strong>Huge AI Chip Demand</strong>
+          <ul>
+            <li>Companies are using more AI tools (like ChatGPT), which need powerful chips. Nvidia's H20 and Blackwell chips are in high demand.</li>
+          </ul>
+        </li>
+        <li><strong>Smart Investments in Infrastructure</strong>
+          <ul>
+            <li>By building factories in the U.S., Nvidia is avoiding global trade issues. New data centers (like Stargate UAE) help expand into new markets.</li>
+          </ul>
+        </li>
+      </ol>
       
       <p class="conclusion">Nvidia's rise signals a shift in investor interest from software to companies that build the core of AI technology, showing that AI hardware companies are now just as important as software giants like Microsoft.</p>
     </div>`,
@@ -48,7 +56,7 @@ const newsItems = [
       
       <p>This tragedy is a grim reminder that even in a modern city like Bengaluru—public infrastructure can become dangerously inadequate when massive crowds gather spontaneously.</p>
       
-      <h3>Our Thoughts</h3>
+      <h3><strong>Our Thoughts</strong></h3>
       <p>It is almost unbelievable that a joyous occasion—fans gathering to celebrate <strong>RCB's cricket heroes</strong>—ended with parents weeping for lost children, and a city mourning <strong>11 precious lives</strong>. Families who came to celebrate are now planning funerals. One grandmother lost her <strong>14‐year‐old granddaughter</strong> who had turned pale after being shoved to the ground.</p>
       
       <p>For Bengaluru, IPL organizers, the <strong>BCCI</strong>, and <strong>RCB</strong> itself, this is a wake-up call. Cricket is our passion, RCB is our pride—but lives are irreplaceable. May the memory of those we lost inspire better planning so no family ever faces this kind of agony again.</p>
@@ -62,41 +70,47 @@ const newsItems = [
   },
   {
     id: 3,
-    title: "₹1.5 Lakh Crore Bet on the Northeast: Reliance, Adani & Vedanta to Spark Industrial Revolution in India's East",
+    title: "Hyundai and Kia Pull Out of Ola Electric as Losses Mount",
     summary: `<div class="article-content">
-      <p class="lead-paragraph">At the summit to boost Northeast India's growth, three big Indian companies—Reliance Industries (RIL), the Adani Group, and Vedanta—each announced they'll pour in ₹30,000–50,000 crore more into the region over the coming years.</p>
+      <p class="lead-paragraph"><strong>Hyundai Motor Company</strong> sold its entire 2.47% stake in Ola Electric (about 10.88 crore shares) for a total of ₹551.96 crore, at an average price of ₹50.70 per share. At the same time, <strong>Kia Corporation</strong> sold 0.62% of Ola Electric (around 2.71 crore shares) for ₹137.35 crore, at an average price of ₹50.55 per share. After these transactions, Ola Electric's share price fell by 7.58%, closing at ₹49.61 on the National Stock Exchange (NSE).</p>
       
-      <p>These funds will go into things like power, roads, telecom (5G), green energy, healthcare, retail, digital infrastructure, and more. Together, these projects are expected to create around 100,000 new jobs in Assam and the six other Northeastern states.</p>
+      <p>In its latest quarterly results (January–March 2025), Ola Electric posted a net loss of ₹870 crore, compared with a loss of ₹416 crore in the same period a year earlier. Its revenue for that quarter dropped to ₹611 crore from ₹1,598 crore in Q4 of FY 2023–24. For the full year FY 2024–25, Ola Electric recorded a net loss of ₹2,276 crore versus</p>
       
-      <h3>Why They're Investing (Reason Behind It)</h3>
-      <ul>
-        <li><strong>Attractive Investment due to Incentives:</strong> India's "Act East" policy and special state incentives make the Northeast an attractive place to invest.</li>
-        <li><strong>New Markets - Untapped Demand:</strong> The region's economy is growing fast—more people, rising incomes, and under-served sectors (like fiber-broadband and retail).</li>
-        <li><strong>Diversification:</strong> Companies want to spread out where they do business (not just in big cities or traditional hubs), reducing risk.</li>
-      </ul>
+      <h3><strong>Reasons Behind this</strong></h3>
+      <ol>
+        <li><strong>Portfolio Re-allocation by Hyundai and Kia</strong>
+          <ul>
+            <li>Automakers often invest in emerging electric-vehicle (EV) startups but may later sell those stakes to free up cash for core business needs (for example, new model development or supply-chain investments).</li>
+            <li>Given Ola Electric's recent losses and revenue decline, Hyundai and Kia likely decided it was a good time to exit and reallocate capital elsewhere.</li>
+          </ul>
+        </li>
+        <li><strong>Ola Electric's Financial Performance</strong>
+          <ul>
+            <li>The widening losses (₹870 crore in Q4 and ₹2,276 crore for FY 2025) suggest the company needs fresh capital or better margins. Large investors sometimes reduce their holdings when a company is burning cash, signaling caution.</li>
+          </ul>
+        </li>
+      </ol>
       
-      <h4>Big Names Signal Confidence</h4>
-      <p>For Northeast, when RIL, Adani, and Vedanta commit hundreds of crores, it shows corporate India believes in the Northeast's potential. From 5G and AI in schools (Reliance) to green power grids (Adani) and data centers (Vedanta), investments cover everything—boosting multiple industries at once.</p>
+      <h3><strong>Other points</strong></h3>
+      <h4><strong>Investor Confidence takes the hit</strong></h4>
+      <p>When two major global automakers sell their entire stakes, it can weaken confidence among retail investors and drive the stock price down in the short term.</p>
       
-      <h3>Consequences & Impact</h3>
-      <div class="payout-table">
-        <div class="table-row"><strong>Local Communities:</strong> New factories, better hospitals and schools, faster internet, cleaner energy, more jobs.</div>
-        <div class="table-row"><strong>State Governments:</strong> Higher tax revenues, improved transport/energy networks, easier to attract further investment.</div>
-        <div class="table-row"><strong>Businesses:</strong> Faster supply chains, access to new customers, and cheaper logistics in the region.</div>
-        <div class="table-row"><strong>National Economy:</strong> Balances growth away from crowded metros, strengthens ties with Southeast Asia.</div>
-      </div>
+      <h4><strong>Impact on Ola Electric's Funding Needs</strong></h4>
+      <p>Reducing large strategic investors can make it harder for Ola Electric to raise fresh funds at favorable prices. New investors may demand steeper discounts to buy equity, or existing lenders may charge higher interest on debt</p>
       
-      <h4>Broader Effects</h4>
-      <ul>
-        <li><strong>Job Creation:</strong> ~100,000 direct and indirect jobs—from construction to tech support.</li>
-        <li><strong>Infrastructure Leap:</strong> Upgraded roads, power lines, and digital networks mean everyday life improves (less blackouts, faster downloads).</li>
-        <li><strong>For everyone:</strong> Small farmers and local entrepreneurs can sell produce to big retail chains or offer services to corporate projects.</li>
-        <li><strong>Geopolitical Edge:</strong> A well-connected Northeast strengthens links with Myanmar, Bangladesh, and beyond—boosting trade and national security.</li>
-      </ul>
+      <h4><strong>Automakers Rethinking EV Partnerships</strong></h4>
+      <p>Hyundai and Kia's exit may prompt other carmakers to reevaluate their stakes in EV startups. If a company like Ola Electric struggles with scale or margins, automakers could decide they receive better returns by developing in-house EV platforms rather than partnering or investing in independent firms.</p>
       
-      <p class="conclusion">This trio of mega-investments is a clear bet on the Northeast—transforming it from a traditionally under-invested region into a hub of jobs, industry, and connectivity, with positive ripple effects for India's entire economy.</p>
+      <h4><strong>Sensitive Indian Market</strong></h4>
+      <p>Ola Electric's stock drop of 7.58% shows how sensitive investors are to large shareholders exiting.</p>
+      
+      <h4><strong>Shifts in Institutional Allocation</strong></h4>
+      <p>Some mutual funds or pension portfolios might reduce exposure to EV startups, preferring more established automakers or diversified tech companies.</p>
+      
+      <h4><strong>Valuation Re-benchmarking</strong></h4>
+      <p>After this sale, Ola Electric's implied market cap dropped. Future fund-raising rounds may happen at a lower valuation, influencing how other EV startups price their own equity rounds.</p>
     </div>`,
-    category: "General",
+    category: "Finance",
     date: "may 24, 2025",
     readTime: 4,
     source: "Economic Times"
@@ -206,7 +220,7 @@ const newsItems = [
     id: 6,
     title: "𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚",
     summary: `<div class="article-content">
-      <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞'𝐬 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
+      <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞's 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
       
       <h3>Key Announcements</h3>
       <ul>
