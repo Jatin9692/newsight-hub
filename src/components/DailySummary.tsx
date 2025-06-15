@@ -9,36 +9,69 @@ import { ArrowRight } from 'lucide-react';
 const newsItems = [
   {
     id: 1,
-    title: "Crowning Moment: Nvidia Tops Microsoft as the World's Most Valuable Company at $3.45T",
+    title: "Breaking the Choke: South Africa's Epic ICC World Test Championship Triumph at Lord's",
     summary: `<div class="article-content">
-      <p class="lead-paragraph"><strong>Nvidia</strong> has become the world's most valuable company, overtaking <strong>Microsoft</strong>. On June 3, 2025, its stock price rose by 3.4%, making <strong>Nvidia</strong> worth around <strong>$3.45 trillion</strong>, just ahead of <strong>Microsoft</strong> at <strong>$3.44 trillion</strong>.</p>
+      <p class="lead-paragraph"><strong>Q: How did South Africa finally end their 27-year ICC title drought in the World Test Championship Final?</strong></p>
       
-      <p>This growth is mainly due to strong demand for <strong>Nvidia's AI chips</strong>. In the last quarter, <strong>Nvidia</strong> earned <strong>$44.1 billion</strong>, a 69% increase compared to last year. Even with global challenges like tariffs, <strong>Nvidia</strong> made <strong>$4.6 billion</strong> just from its new AI chip, the <strong>H20</strong>.</p>
+      <p><strong>A:</strong> In a breathtaking <strong>Lord's</strong> climax, <strong>South Africa</strong> chased down <strong>282 with five wickets in hand</strong>, powered by <strong>Aiden Markram's 136</strong> and <strong>Temba Bavuma's</strong> unbeaten <strong>65</strong>, to beat <strong>Australia</strong> and claim their first <strong>ICC trophy since 1998</strong>.</p>
       
-      <p><strong>Nvidia</strong> is also investing in AI infrastructure. It plans to spend <strong>$500 billion over the next 4 years</strong> on building AI systems, supercomputers, and data centers. It has started making its <strong>Blackwell chips</strong> in <strong>Arizona</strong> and is building a huge <strong>Texas campus</strong> with <strong>Foxconn</strong>.</p>
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
       
-      <p>Internationally, <strong>Nvidia</strong> is building the largest AI data center network outside the U.S. called <strong>Stargate UAE</strong>, with partners like <strong>OpenAI</strong>, <strong>Oracle</strong>, <strong>SoftBank</strong>, and <strong>Cisco</strong>. <strong>Nvidia's chips</strong> are also used by big cloud companies like <strong>Google</strong>, <strong>Microsoft Azure</strong>, <strong>AWS</strong>, and <strong>Oracle</strong>.</p>
+      <h3><strong>Who were the match-winners?</strong></h3>
+      <ul>
+        <li><strong>Aiden Markram (SA):</strong> Match-defining <strong>136 off 207 balls</strong> in the fourth innings.</li>
+        <li><strong>Temba Bavuma (c, SA):</strong> Calm <strong>65*</strong> under pressure to steer the chase.</li>
+        <li><strong>Kagiso Rabada (SA):</strong> Seam strike-machine, finishing with <strong>nine wickets</strong> across both innings.</li>
+      </ul>
       
-      <h3><strong>Why This Happened</strong></h3>
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      
+      <h3><strong>How did the final unfold?</strong></h3>
       <ol>
-        <li><strong>Huge AI Chip Demand</strong>
+        <li><strong>Australia batted first:</strong> 212 all out (Cummins 5–28).</li>
+        <li><strong>South Africa replied:</strong> 138 all out (Starc 3–41), conceding a 74-run deficit.</li>
+        <li><strong>Australia's second innings:</strong> 207 (Rabada 6–66), setting a target of 282.</li>
+        <li><strong>The epic chase:</strong>
           <ul>
-            <li>Companies are using more AI tools (like <strong>ChatGPT</strong>), which need powerful chips. <strong>Nvidia's H20</strong> and <strong>Blackwell chips</strong> are in high demand.</li>
-          </ul>
-        </li>
-        <li><strong>Smart Investments in Infrastructure</strong>
-          <ul>
-            <li>By building factories in the U.S., <strong>Nvidia</strong> is avoiding global trade issues. New data centers (like <strong>Stargate UAE</strong>) help expand into new markets.</li>
+            <li>Early jitters at <strong>30 for 4</strong> on Day 1 evening.</li>
+            <li><strong>Markram</strong> and <strong>Bavuma</strong> stitched a <strong>167-run partnership</strong>.</li>
+            <li><strong>Proteas</strong> sealed victory at <strong>282 for 5</strong> on Day 4.</li>
           </ul>
         </li>
       </ol>
       
-      <p class="conclusion"><strong>Nvidia's</strong> rise signals a shift in investor interest from software to companies that build the core of AI technology, showing that AI hardware companies are now just as important as software giants like <strong>Microsoft</strong>.</p>
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      
+      <ul>
+        <li>With this victory, <strong>Africa Erased the "chokers" tag</strong> that haunted <strong>SA</strong> since the <strong>1999 World Cup semi-final</strong>.</li>
+        <li><strong>South Africans</strong> were united—<strong>Black, coloured, white</strong>—celebrating a turn-around that generations dreamt of.</li>
+      </ul>
+      
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      
+      <h3><strong>Man of the match</strong></h3>
+      <p><strong>Aiden Markram</strong></p>
+      
+      <h3><strong>Records & Milestones</strong></h3>
+      <div class="payout-table">
+        <div class="table-row"><strong>First ICC Title since 1998:</strong> Ended a 27-year wait</div>
+        <div class="table-row"><strong>Highest successful chase in a Final:</strong> 282/5</div>
+        <div class="table-row"><strong>Most wickets in Final (Match):</strong> Kagiso Rabada – 9</div>
+        <div class="table-row"><strong>First South African captain to lift mace:</strong> Temba Bavuma</div>
+      </div>
+      
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      
+      <p><strong>This was Test cricket's ultimate drama—served at its finest.</strong></p>
+      
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      
+      <p class="conclusion">"<strong>There were lot of doubters, but the way we played would have wiped all of that out. Special moment for u all, special moment back home.</strong>" said <strong>Bavuma</strong>.</p>
     </div>`,
-    category: "finance",
-    date: "june 3, 2025",
-    readTime: 3,
-    source: "Financial Times"
+    category: "General",
+    date: "june 15, 2025",
+    readTime: 4,
+    source: "ESPN Cricinfo"
   },
   {
     id: 2,
