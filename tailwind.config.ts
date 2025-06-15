@@ -64,7 +64,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				news: {
-					finance: '#6366f1',
+					finance: '#4ade80',
 					marketing: '#8b5cf6', 
 					politics: '#ec4899',
 					sports: '#0ea5e9'
