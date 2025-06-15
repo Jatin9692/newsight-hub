@@ -47,7 +47,7 @@ const Index = () => {
               Welcome to <span className="text-primary">Biznews</span>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
-              Your comprehensive resource for student and professional news insights.
+              Your comprehensive resource for Simplified news insights.
             </p>
           </div>
         </section>
