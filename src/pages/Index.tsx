@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import DailySummary from '../components/DailySummary';
@@ -120,9 +119,9 @@ const Index = () => {
                 <h2 className="text-xl font-bold mb-2">Surprise</h2>
                 <h3 className="text-md font-medium mb-3">Free AI Tools</h3>
                 <ul className="text-sm space-y-1">
-                  <li className="hover:text-primary cursor-pointer transition-colors">• ChatGPT - The versatile AI assistant</li>
-                  <li className="hover:text-primary cursor-pointer transition-colors">• Midjourney - Create stunning AI-generated images</li>
-                  <li className="hover:text-primary cursor-pointer transition-colors">• Canva AI - Design with AI assistance</li>
+                  <li className="hover:text-primary cursor-pointer transition-colors">• Bubble AI - The powerful no-code platform</li>
+                  <li className="hover:text-primary cursor-pointer transition-colors">• Zapier - Automation for busy people</li>
+                  <li className="hover:text-primary cursor-pointer transition-colors">• Eleven Labs - Prime AI voices</li>
                 </ul>
               </div>
             </AIToolsDialog>
