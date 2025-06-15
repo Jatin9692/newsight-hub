@@ -1,0 +1,25 @@
+
+.text-news-finance {
+  color: rgb(var(--news-finance));
+}
+
+.text-news-marketing {
+  color: rgb(var(--news-marketing));
+}
+
+.text-news-politics {
+  color: rgb(var(--news-politics));
+}
+
+.border-news-finance {
+  border-color: rgb(var(--news-finance));
+}
+
+.border-news-marketing {
+  border-color: rgb(var(--news-marketing));
+}
+
+.border-news-politics {
+  border-color: rgb(var(--news-politics));
+}
+
