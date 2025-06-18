@@ -335,3 +335,6 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     }
   ]
 };
+export const articles: NewsArticle[] = [
+  // ... your updated list with slugs
+];
