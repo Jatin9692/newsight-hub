@@ -103,50 +103,36 @@ const newsItems = [
   },
   {
     id: 3,
-    title: "Hyundai and Kia Pull Out of Ola Electric as Losses Mount",
+    title: "What Is Aladdin by Jio BlackRock?",
     summary: `<div class="article-content">
-      <p class="lead-paragraph"><strong>Hyundai Motor Company</strong> sold its entire 2.47% stake in Ola Electric (about 10.88 crore shares) for a total of ₹551.96 crore, at an average price of ₹50.70 per share. At the same time, <strong>Kia Corporation</strong> sold 0.62% of Ola Electric (around 2.71 crore shares) for ₹137.35 crore, at an average price of ₹50.55 per share. After these transactions, Ola Electric's share price fell by 7.58%, closing at ₹49.61 on the National Stock Exchange (NSE).</p>
+      <p class="lead-paragraph">Aladdin (Asset, Liability, and Debt and Derivative Investment Network) is BlackRock's flagship, cloud based platform for institutional investors—and it's now available in India through the Jio BlackRock joint venture. By bringing together portfolio management, risk analytics, trade execution, compliance monitoring, and reporting into one unified dashboard, Aladdin empowers investors to see the full picture, plan for every scenario, and act with confidence.</p>
       
-      <p>In its latest quarterly results (January–March 2025), Ola Electric posted a net loss of ₹870 crore, compared with a loss of ₹416 crore in the same period a year earlier. Its revenue for that quarter dropped to ₹611 crore from ₹1,598 crore in Q4 of FY 2023–24. For the full year FY 2024–25, Ola Electric recorded a net loss of ₹2,276 crore versus</p>
+      <hr style="margin: 20px 0; border: 1px solid #ddd;">
       
-      <h3><strong>Reasons Behind this</strong></h3>
-      <ol>
-        <li><strong>Portfolio Re-allocation by Hyundai and Kia</strong>
-          <ul>
-            <li>Automakers often invest in emerging electric-vehicle (EV) startups but may later sell those stakes to free up cash for core business needs (for example, new model development or supply-chain investments).</li>
-            <li>Given Ola Electric's recent losses and revenue decline, Hyundai and Kia likely decided it was a good time to exit and reallocate capital elsewhere.</li>
-          </ul>
-        </li>
-        <li><strong>Ola Electric's Financial Performance</strong>
-          <ul>
-            <li>The widening losses (₹870 crore in Q4 and ₹2,276 crore for FY 2025) suggest the company needs fresh capital or better margins. Large investors sometimes reduce their holdings when a company is burning cash, signaling caution.</li>
-          </ul>
-        </li>
-      </ol>
+      <p>Think of Aladdin as a super powerful "control center" for investments. Here's what it is and what it does, in everyday terms:</p>
       
-      <h3><strong>Other points</strong></h3>
-      <h4><strong>Investor Confidence takes the hit</strong></h4>
-      <p>When two major global automakers sell their entire stakes, it can weaken confidence among retail investors and drive the stock price down in the short term.</p>
+      <h3><strong>1. All in One Dashboard</strong></h3>
+      <p>Imagine you have dozens of bank accounts, stocks, bonds, loans, even derivatives—all in different places. Aladdin brings every piece of your portfolio into one screen so you can see the full picture at a glance.</p>
       
-      <h4><strong>Impact on Ola Electric's Funding Needs</strong></h4>
-      <p>Reducing large strategic investors can make it harder for Ola Electric to raise fresh funds at favorable prices. New investors may demand steeper discounts to buy equity, or existing lenders may charge higher interest on debt</p>
+      <h3><strong>2. Risk Radar</strong></h3>
+      <p>It constantly scans your investments for potential dangers—like a sudden market drop, currency swings, or interest rate spikes—and shows you which holdings are most vulnerable.</p>
       
-      <h4><strong>Automakers Rethinking EV Partnerships</strong></h4>
-      <p>Hyundai and Kia's exit may prompt other carmakers to reevaluate their stakes in EV startups. If a company like Ola Electric struggles with scale or margins, automakers could decide they receive better returns by developing in-house EV platforms rather than partnering or investing in independent firms.</p>
+      <h3><strong>3. What If Simulator</strong></h3>
+      <p>Want to know what would happen if oil prices jumped 20% or if a major economy slipped into recession? Aladdin runs those scenarios in seconds, so you can plan ahead.</p>
       
-      <h4><strong>Sensitive Indian Market</strong></h4>
-      <p>Ola Electric's stock drop of 7.58% shows how sensitive investors are to large shareholders exiting.</p>
+      <h3><strong>4. Trade & Compliance Hub</strong></h3>
+      <p>When you decide to buy or sell, Aladdin helps you execute trades efficiently and checks in real time that you're following all the rules (both internal guidelines and regulatory requirements).</p>
       
-      <h4><strong>Shifts in Institutional Allocation</strong></h4>
-      <p>Some mutual funds or pension portfolios might reduce exposure to EV startups, preferring more established automakers or diversified tech companies.</p>
+      <h3><strong>5. Performance Tracker</strong></h3>
+      <p>It measures how each part of your portfolio is doing—what's making you money, what's dragging you down—and breaks it down by region, asset type, or team.</p>
       
-      <h4><strong>Valuation Re-benchmarking</strong></h4>
-      <p>After this sale, Ola Electric's implied market cap dropped. Future fund-raising rounds may happen at a lower valuation, influencing how other EV startups price their own equity rounds.</p>
+      <h3><strong>6. Collaboration & Reporting</strong></h3>
+      <p>Teams around the world can work together on the same platform, and it automatically generates clear reports for clients, managers, or regulators.</p>
     </div>`,
     category: "Finance",
-    date: "may 24, 2025",
-    readTime: 4,
-    source: "Economic Times"
+    date: "june 18, 2025",
+    readTime: 3,
+    source: "Jatin"
   },
   {
     id: 4,
