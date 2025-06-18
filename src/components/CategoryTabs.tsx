@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,26 +19,39 @@ const CategoryTabs = () => {
   ];
 
   return (
-    <Link to={`/${category}/${article.slug}`}>
-      <Card className="w-full h-full">
+    <Card className="w-full h-full">
       <CardHeader>
         <CardTitle>Latest News</CardTitle>
         <CardDescription>Stay updated with the latest developments</CardDescription>
       </CardHeader>
       <CardContent>
-        <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as NewsCategory)} className="w-full">
+        <Tabs 
+          value={activeTab} 
+          onValueChange={(value) => setActiveTab(value as NewsCategory)} 
+          className="w-full"
+        >
           <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
             {categories.map((category) => (
-              <TabsTrigger key={category.value} value={category.value} className="text-xs">
+              <TabsTrigger 
+                key={category.value} 
+                value={category.value} 
+                className="text-xs"
+              >
                 {category.label}
               </TabsTrigger>
             ))}
           </TabsList>
           
           {categories.map((category) => (
-            <TabsContent key={category.value} value={category.value} className="mt-4">
+            <TabsContent 
+              key={category.value} 
+              value={category.value} 
+              className="mt-4"
+            >
               <div className="space-y-4">
-                <p className="text-sm text-muted-foreground">{category.description}</p>
+                <p className="text-sm text-muted-foreground">
+                  {category.description}
+                </p>
                 <div className={`grid gap-4 ${isMobile ? 'grid-cols-1' : 'grid-cols-1 lg:grid-cols-2'}`}>
                   {newsData[category.value].map((article, index) => (
                     <NewsCard 
