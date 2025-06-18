@@ -1,7 +1,13 @@
+
 import { NewsCategory } from "../components/CategoryTabs";
+
+// Utility function to generate URL-friendly slugs
+const slugify = (title: string): string =>
+  title.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
 
 export interface NewsArticle {
   title: string;
+  slug: string;
   summary: string;
   source: string;
   date: string;
@@ -12,6 +18,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   finance: [
     {
       title: "What Is Aladdin by Jio BlackRock?",
+      slug: slugify("What Is Aladdin by Jio BlackRock?"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Aladdin (Asset, Liability, and Debt and Derivative Investment Network) is BlackRock's flagship, cloud based platform for institutional investors—and it's now available in India through the Jio BlackRock joint venture. By bringing together portfolio management, risk analytics, trade execution, compliance monitoring, and reporting into one unified dashboard, Aladdin empowers investors to see the full picture, plan for every scenario, and act with confidence.</p>
         
@@ -43,6 +50,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals",
+      slug: slugify("Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals"),
       summary: `<div class="article-content">
         <p class="lead-paragraph"><strong>Flipkart</strong>, the <strong>Walmart-backed</strong> e-commerce giant, sold two of its investments this week:</p>
         
@@ -65,7 +73,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
           <li><strong>Flipkart</strong> joined this wave, choosing now to monetize (sell) stakes that were acquired years ago.</li>
         </ul>
         
-        <h4><strong>Declining Share Prices & Need to Sell at "Recovery" Levels</h4>
+        <h4><strong>Declining Share Prices & Need to Sell at "Recovery" Levels</strong></h4>
         <ul>
           <li><strong>ABFRL's</strong> share price dropped by about <strong>11.5%</strong> right before <strong>Flipkart</strong> sold, dipping to <strong>₹76.10</strong> on the BSE (Bombay Stock Exchange). By executing the block deal at <strong>₹80.32</strong>—a small discount to the previous close—<strong>Flipkart</strong> locked in an acceptable price before any further fall.</li>
           <li>In <strong>Blackbuck's</strong> case, the company's early-growth stage had given way to slower growth and profitability concerns in recent quarters. <strong>Flipkart</strong> may have recognized that holding on could risk further value erosion.</li>
@@ -106,6 +114,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
+      slug: slugify("RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24.</p>
         
@@ -156,6 +165,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Financial sector embraces blockchain technology",
+      slug: slugify("Financial sector embraces blockchain technology"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Major financial institutions are increasingly adopting blockchain solutions for transaction processing and record-keeping, marking a significant shift in how the banking industry approaches security and efficiency.</p>
         
@@ -174,6 +184,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   marketing: [
     {
       title: "𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚",
+      slug: slugify("𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞's 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
         
@@ -203,6 +214,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Digital marketing trends reshaping brand strategies",
+      slug: slugify("Digital marketing trends reshaping brand strategies"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Companies are rapidly adapting their marketing approaches as consumer behavior shifts toward digital-first interactions and personalized experiences.</p>
         
@@ -219,6 +231,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Social commerce drives new revenue streams",
+      slug: slugify("Social commerce drives new revenue streams"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Social media platforms are becoming primary sales channels as brands integrate shopping experiences directly into social content.</p>
         
@@ -237,6 +250,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   politics: [
     {
       title: "Election reforms spark nationwide debate",
+      slug: slugify("Election reforms spark nationwide debate"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Proposed changes to electoral processes have ignited discussions about democracy, representation, and voting rights across the nation.</p>
         
@@ -253,6 +267,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "International trade agreements under review",
+      slug: slugify("International trade agreements under review"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Government officials are reassessing existing trade partnerships to address changing global economic conditions and domestic priorities.</p>
         
@@ -269,6 +284,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Healthcare policy reforms gain momentum",
+      slug: slugify("Healthcare policy reforms gain momentum"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Bipartisan support emerges for comprehensive healthcare reforms aimed at improving accessibility and reducing costs for citizens.</p>
         
@@ -287,6 +303,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   ai: [
     {
       title: "Breakthrough in quantum-AI hybrid computing",
+      slug: slugify("Breakthrough in quantum-AI hybrid computing"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Researchers achieve significant milestone in combining quantum computing power with artificial intelligence, opening new possibilities for complex problem-solving.</p>
         
@@ -303,6 +320,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "AI ethics framework gains global adoption",
+      slug: slugify("AI ethics framework gains global adoption"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">International organizations collaborate on establishing comprehensive guidelines for responsible AI development and deployment across industries.</p>
         
@@ -319,6 +337,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Machine learning revolutionizes medical diagnosis",
+      slug: slugify("Machine learning revolutionizes medical diagnosis"),
       summary: `<div class="article-content">
         <p class="lead-paragraph">Advanced AI systems demonstrate unprecedented accuracy in detecting diseases early, potentially saving millions of lives through faster, more precise medical diagnoses.</p>
         
@@ -335,6 +354,6 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     }
   ]
 };
-export const articles: NewsArticle[] = [
-  // ... your updated list with slugs
-];
+
+// Flattened array of all articles with slugs for easy access
+export const articles: NewsArticle[] = Object.values(newsData).flat();
