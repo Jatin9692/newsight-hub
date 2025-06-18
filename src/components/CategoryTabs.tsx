@@ -20,7 +20,8 @@ const CategoryTabs = () => {
   ];
 
   return (
-    <Card className="w-full h-full">
+    <Link to={`/${category}/${article.slug}`}>
+      <Card className="w-full h-full">
       <CardHeader>
         <CardTitle>Latest News</CardTitle>
         <CardDescription>Stay updated with the latest developments</CardDescription>
