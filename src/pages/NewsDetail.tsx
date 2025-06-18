@@ -1,26 +1,19 @@
-
 import React from 'react';
-import { useLocation, useParams, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { NewsArticle } from '../data/newsData';
-import { NewsCategory } from '../components/CategoryTabs';
+import { articles } from '../data/newsData'; // Ensure you export the array
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-interface LocationState {
-  article: NewsArticle;
-  category: NewsCategory;
-  isDailySummary?: boolean;
-}
-
 const NewsDetail = () => {
-  const location = useLocation();
-  const { category } = useParams<{ category: string; slug: string }>();
-  const state = location.state as LocationState;
+  const { category, slug } = useParams<{ category: string; slug: string }>();
 
-  if (!state || !state.article) {
+  const article = articles.find((a: NewsArticle) => a.slug === slug);
+
+  if (!article) {
     return (
       <div className="flex min-h-screen flex-col">
         <Navbar />
@@ -45,8 +38,6 @@ const NewsDetail = () => {
     );
   }
 
-  const { article } = state;
-  
   const getCategoryColor = () => {
     switch (category) {
       case 'finance': return 'text-news-finance';
@@ -69,15 +60,13 @@ const NewsDetail = () => {
             </Link>
           </Button>
         </div>
-        
+
         <article className="max-w-4xl mx-auto">
           <Card className="bg-card shadow-md">
             <CardHeader>
               <CardTitle className="text-3xl font-bold mb-4 leading-tight">{article.title}</CardTitle>
               <div className="flex flex-wrap gap-3 items-center text-sm text-muted-foreground">
-                {!state.isDailySummary && (
-                  <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
-                )}
+                <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
                 <span className="font-medium">{article.source}</span>
                 <span>{article.date}</span>
                 <div className="flex items-center gap-1">
@@ -88,7 +77,7 @@ const NewsDetail = () => {
             </CardHeader>
             <CardContent className="prose max-w-none">
               {article.summary.includes('<div class="article-content">') ? (
-                <div 
+                <div
                   className="formatted-article-content"
                   dangerouslySetInnerHTML={{ __html: article.summary }}
                 />
