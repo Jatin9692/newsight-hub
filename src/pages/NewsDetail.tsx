@@ -1,17 +1,54 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+
+import React, { useEffect } from 'react';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { NewsArticle } from '../data/newsData';
-import { articles } from '../data/newsData'; // Ensure you export the array
+import { articles } from '../data/newsData';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const NewsDetail = () => {
   const { category, slug } = useParams<{ category: string; slug: string }>();
+  const location = useLocation();
 
-  const article = articles.find((a: NewsArticle) => a.slug === slug);
+  // Check if article is passed from Daily Summary or find by slug
+  const articleFromState = location.state?.article;
+  const isDailySummary = location.state?.isDailySummary;
+  
+  const article = articleFromState || articles.find((a: NewsArticle) => a.slug === slug);
+
+  // Set dynamic title and meta description
+  useEffect(() => {
+    if (article) {
+      // Update page title
+      document.title = `${article.title} | Biz News Daily`;
+      
+      // Update meta description
+      const metaDescription = document.querySelector('meta[name="description"]');
+      const plainTextSummary = article.summary.replace(/<[^>]*>/g, '').substring(0, 160);
+      if (metaDescription) {
+        metaDescription.setAttribute('content', plainTextSummary + '...');
+      } else {
+        const newMetaDescription = document.createElement('meta');
+        newMetaDescription.name = 'description';
+        newMetaDescription.content = plainTextSummary + '...';
+        document.head.appendChild(newMetaDescription);
+      }
+
+      // Add canonical URL
+      const existingCanonical = document.querySelector('link[rel="canonical"]');
+      if (existingCanonical) {
+        existingCanonical.setAttribute('href', window.location.href);
+      } else {
+        const canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        canonical.href = window.location.href;
+        document.head.appendChild(canonical);
+      }
+    }
+  }, [article]);
 
   if (!article) {
     return (
@@ -66,7 +103,7 @@ const NewsDetail = () => {
             <CardHeader>
               <CardTitle className="text-3xl font-bold mb-4 leading-tight">{article.title}</CardTitle>
               <div className="flex flex-wrap gap-3 items-center text-sm text-muted-foreground">
-                <span className={`font-medium capitalize ${getCategoryColor()}`}>{category}</span>
+                <span className={`font-medium capitalize ${getCategoryColor()}`}>{category || article.category}</span>
                 <span className="font-medium">{article.source}</span>
                 <span>{article.date}</span>
                 <div className="flex items-center gap-1">

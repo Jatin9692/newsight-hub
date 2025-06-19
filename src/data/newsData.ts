@@ -113,55 +113,61 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
       readTime: 5
     },
     {
-      title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
-      slug: slugify("RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy"),
+      title: "FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000",
+      slug: slugify("FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000"),
       summary: `<div class="article-content">
-        <p class="lead-paragraph">The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24.</p>
+        <p class="lead-paragraph">India's road commuters are in for a major relief with the introduction of the FASTag Annual Pass—a game-changing initiative launched by Union Minister Nitin Gadkari. This pass allows owners of private vehicles to travel across national highways with ease and predictability by paying a one-time fee of ₹3,000 for up to 200 toll plaza crossings over a one-year period.</p>
         
-        <h3>Reasons Behind the Record Transfer</h3>
-        <h4>Higher Earnings from Forex Operations</h4>
-        <p>Strong foreign exchange gains, driven by increased dollar sales and favourable exchange-rate movements, boosted the RBI's income. These gains form a significant part of the central bank's surplus.</p>
+        <h3><strong>What Is the FASTag Annual Pass?</strong></h3>
+        <p>The FASTag Annual Pass is a prepaid subscription designed for non-commercial private vehicles such as cars, jeeps, and vans. It provides up to 200 toll transactions on national highways and expressways, valid for 12 months from the date of activation.</p>
+        <p>Instead of paying individually at each toll booth, vehicle owners can enjoy a smoother and cost-effective travel experience with this single annual recharge.</p>
         
-        <div class="note">Note: Despite paying out a larger dividend, the RBI maintains a robust CRB (now 7.5%)—well within the 4.5–7.5% range set by the revised ECF—ensuring a buffer for contingencies.</div>
+        <h3><strong>FASTag Annual Pass Launch Date</strong></h3>
+        <p>The scheme will go live on August 15, 2025. From this date, eligible vehicle owners can activate the pass through their existing FASTag account and start using it across toll plazas on India's national highway network.</p>
         
-        <h3>Key Details of the Payout</h3>
-        <div class="payout-table">
-          <div class="table-row"><strong>2022-23:</strong> ₹87,416 crore (6.0% CRB)</div>
-          <div class="table-row"><strong>2023-24:</strong> ₹2.10 lakh crore (6.5% CRB)</div>
-          <div class="table-row"><strong>2024-25:</strong> ₹2.68–2.69 lakh crore (7.5% CRB)</div>
-        </div>
-        
-        <h3>Consequences & Implications</h3>
-        <h4>For the Central Government</h4>
+        <h3><strong>Key Features of the ₹3000 FASTag Annual Pass</strong></h3>
         <ul>
-          <li><strong>Fiscal Relief:</strong> The ₹2.69 lakh crore helps narrow the fiscal deficit (targeted at 4.4% of GDP for FY 2025-26) without having to take additional market borrowing.</li>
-          <li><strong>Enhanced Spending Capacity:</strong> Frees up capital for infrastructure, healthcare, education, and social welfare schemes—without cutting other expenditures.</li>
-          <li><strong>Lower Borrowing Costs in Future:</strong> Reduced pressure on government bonds.</li>
+          <li><strong>One-time payment:</strong> ₹3,000 per vehicle</li>
+          <li><strong>Validity:</strong> One year or 200 toll plaza crossings (whichever comes first)</li>
+          <li><strong>Vehicle type:</strong> Only for non-commercial private vehicles</li>
+          <li><strong>Activation platform:</strong> Rajmarg Yatra mobile app, NHAI, or MoRTH websites</li>
+          <li><strong>No hardware required:</strong> Existing FASTag remains valid</li>
+          <li><strong>Nationwide coverage:</strong> Applicable across all NHAI toll plazas</li>
         </ul>
         
-        <h4>For the RBI</h4>
-        <p><strong>Maintained Buffers:</strong> By raising the CRB to 7.5%, the RBI retains a strong cushion against unforeseen shocks. Contingency Risk Buffer (CRB). It's like emergency savings in case something goes wrong in the future (like a financial crisis or sudden loss).</p>
+        <h3><strong>Who Can Apply for the FASTag Annual Pass?</strong></h3>
+        <p>To be eligible, users must own a non-commercial private vehicle and have a valid, active FASTag that is not blacklisted. Commercial vehicles, such as trucks or taxis, are not eligible for this scheme.</p>
         
-        <h4>For Financial Markets</h4>
+        <h3><strong>How to Activate the FASTag Annual Pass</strong></h3>
+        <p>Here is a step-by-step guide to activating the ₹3000 FASTag pass:</p>
+        <ol>
+          <li>Download the Rajmarg Yatra App or visit the NHAI/MoRTH official portals</li>
+          <li>Log in with your existing FASTag credentials</li>
+          <li>Choose the "Annual Pass" option</li>
+          <li>Pay ₹3,000 and activate the pass</li>
+          <li>Begin toll-free travel on national highways from August 15 onward</li>
+        </ol>
+        
+        <h3><strong>Major Benefits of the FASTag Annual Pass</strong></h3>
         <ul>
-          <li><strong>Investor Confidence:</strong> A large surplus transfer, such as this, signals robust economic management, bolstering credit ratings and attracting foreign investment.</li>
-          <li><strong>Bond Market Dynamics:</strong> Lower government borrowing requirements may exert less pressure on bond yields, benefiting both corporate and retail borrowers.</li>
+          <li><strong>Cost savings:</strong> Frequent highway travelers usually spend ₹8,000–₹12,000 per year on tolls. This pass cuts the cost to ₹3,000.</li>
+          <li><strong>Convenience:</strong> No need to stop and pay tolls at every booth</li>
+          <li><strong>Predictable spending:</strong> One-time recharge for the entire year</li>
+          <li><strong>Faster movement:</strong> Reduces congestion and wait time at toll plazas</li>
         </ul>
         
-        <h4>For Banks & Financial Institutions</h4>
-        <p><strong>Liquidity Support:</strong> RBI's strong financial position ensures it can provide liquidity through tools like repo operations during stress periods.</p>
+        <h3><strong>What Happens After 200 Trips or 1 Year?</strong></h3>
+        <p>Once the 200-trip limit is exhausted or the 12-month period ends (whichever is earlier), the FASTag reverts to the regular pay-per-use toll deduction model. To continue enjoying benefits, users can purchase a new pass.</p>
         
-        <h4>For Taxpayers & Citizens</h4>
-        <ul>
-          <li><strong>Indirect Benefits:</strong> With the government better funded, there's less need for tax hikes or fee increases—helping keep the overall tax burden stable.</li>
-          <li><strong>Better Public Services:</strong> Improved financing for public goods (roads, healthcare, education) enhances the quality of life.</li>
-        </ul>
+        <h3><strong>Is It Valid on All Roads?</strong></h3>
+        <p>The pass is only valid on toll plazas under the National Highways Authority of India (NHAI). It will not apply to tolls collected by state governments, municipalities, or private operators managing local roads.</p>
         
-        <p class="conclusion">This record surplus transfer of ₹2.68–2.69 lakh crore reflects the RBI's earnings from forex operations. It provides a significant fiscal boost to the government, bolsters market confidence, and ensures that the RBI retains sufficient buffer to navigate future economic uncertainties.</p>
+        <h3><strong>Optional, Not Mandatory</strong></h3>
+        <p>The annual pass is completely optional. If you're an occasional highway user, you can continue paying tolls via your existing FASTag balance as usual.</p>
       </div>`,
-      source: "Business Today",
-      date: "May 24, 2025",
-      readTime: 3
+      source: "Biz News Daily",
+      date: "June 19, 2025",
+      readTime: 4
     },
     {
       title: "Financial sector embraces blockchain technology",

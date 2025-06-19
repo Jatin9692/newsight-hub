@@ -9,69 +9,61 @@ import { ArrowRight } from 'lucide-react';
 const newsItems = [
   {
     id: 1,
-    title: "Breaking the Choke: South Africa's Epic ICC World Test Championship Triumph at Lord's",
+    title: "FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000",
     summary: `<div class="article-content">
-      <p class="lead-paragraph"><strong>Q: How did South Africa finally end their 27-year ICC title drought in the World Test Championship Final?</strong></p>
+      <p class="lead-paragraph">India's road commuters are in for a major relief with the introduction of the FASTag Annual Pass—a game-changing initiative launched by Union Minister Nitin Gadkari. This pass allows owners of private vehicles to travel across national highways with ease and predictability by paying a one-time fee of ₹3,000 for up to 200 toll plaza crossings over a one-year period.</p>
       
-      <p><strong>A:</strong> In a breathtaking <strong>Lord's</strong> climax, <strong>South Africa</strong> chased down <strong>282 with five wickets in hand</strong>, powered by <strong>Aiden Markram's 136</strong> and <strong>Temba Bavuma's</strong> unbeaten <strong>65</strong>, to beat <strong>Australia</strong> and claim their first <strong>ICC trophy since 1998</strong>.</p>
+      <h3><strong>What Is the FASTag Annual Pass?</strong></h3>
+      <p>The FASTag Annual Pass is a prepaid subscription designed for non-commercial private vehicles such as cars, jeeps, and vans. It provides up to 200 toll transactions on national highways and expressways, valid for 12 months from the date of activation.</p>
+      <p>Instead of paying individually at each toll booth, vehicle owners can enjoy a smoother and cost-effective travel experience with this single annual recharge.</p>
       
-      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      <h3><strong>FASTag Annual Pass Launch Date</strong></h3>
+      <p>The scheme will go live on August 15, 2025. From this date, eligible vehicle owners can activate the pass through their existing FASTag account and start using it across toll plazas on India's national highway network.</p>
       
-      <h3><strong>Who were the match-winners?</strong></h3>
+      <h3><strong>Key Features of the ₹3000 FASTag Annual Pass</strong></h3>
       <ul>
-        <li><strong>Aiden Markram (SA):</strong> Match-defining <strong>136 off 207 balls</strong> in the fourth innings.</li>
-        <li><strong>Temba Bavuma (c, SA):</strong> Calm <strong>65*</strong> under pressure to steer the chase.</li>
-        <li><strong>Kagiso Rabada (SA):</strong> Seam strike-machine, finishing with <strong>nine wickets</strong> across both innings.</li>
+        <li><strong>One-time payment:</strong> ₹3,000 per vehicle</li>
+        <li><strong>Validity:</strong> One year or 200 toll plaza crossings (whichever comes first)</li>
+        <li><strong>Vehicle type:</strong> Only for non-commercial private vehicles</li>
+        <li><strong>Activation platform:</strong> Rajmarg Yatra mobile app, NHAI, or MoRTH websites</li>
+        <li><strong>No hardware required:</strong> Existing FASTag remains valid</li>
+        <li><strong>Nationwide coverage:</strong> Applicable across all NHAI toll plazas</li>
       </ul>
       
-      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      <h3><strong>Who Can Apply for the FASTag Annual Pass?</strong></h3>
+      <p>To be eligible, users must own a non-commercial private vehicle and have a valid, active FASTag that is not blacklisted. Commercial vehicles, such as trucks or taxis, are not eligible for this scheme.</p>
       
-      <h3><strong>How did the final unfold?</strong></h3>
+      <h3><strong>How to Activate the FASTag Annual Pass</strong></h3>
+      <p>Here is a step-by-step guide to activating the ₹3000 FASTag pass:</p>
       <ol>
-        <li><strong>Australia batted first:</strong> 212 all out (Cummins 5–28).</li>
-        <li><strong>South Africa replied:</strong> 138 all out (Starc 3–41), conceding a 74-run deficit.</li>
-        <li><strong>Australia's second innings:</strong> 207 (Rabada 6–66), setting a target of 282.</li>
-        <li><strong>The epic chase:</strong>
-          <ul>
-            <li>Early jitters at <strong>30 for 4</strong> on Day 1 evening.</li>
-            <li><strong>Markram</strong> and <strong>Bavuma</strong> stitched a <strong>167-run partnership</strong>.</li>
-            <li><strong>Proteas</strong> sealed victory at <strong>282 for 5</strong> on Day 4.</li>
-          </ul>
-        </li>
+        <li>Download the Rajmarg Yatra App or visit the NHAI/MoRTH official portals</li>
+        <li>Log in with your existing FASTag credentials</li>
+        <li>Choose the "Annual Pass" option</li>
+        <li>Pay ₹3,000 and activate the pass</li>
+        <li>Begin toll-free travel on national highways from August 15 onward</li>
       </ol>
       
-      <hr style="margin: 20px 0; border: 1px solid #ddd;">
-      
+      <h3><strong>Major Benefits of the FASTag Annual Pass</strong></h3>
       <ul>
-        <li>With this victory, <strong>Africa Erased the "chokers" tag</strong> that haunted <strong>SA</strong> since the <strong>1999 World Cup semi-final</strong>.</li>
-        <li><strong>South Africans</strong> were united—<strong>Black, coloured, white</strong>—celebrating a turn-around that generations dreamt of.</li>
+        <li><strong>Cost savings:</strong> Frequent highway travelers usually spend ₹8,000–₹12,000 per year on tolls. This pass cuts the cost to ₹3,000.</li>
+        <li><strong>Convenience:</strong> No need to stop and pay tolls at every booth</li>
+        <li><strong>Predictable spending:</strong> One-time recharge for the entire year</li>
+        <li><strong>Faster movement:</strong> Reduces congestion and wait time at toll plazas</li>
       </ul>
       
-      <hr style="margin: 20px 0; border: 1px solid #ddd;">
+      <h3><strong>What Happens After 200 Trips or 1 Year?</strong></h3>
+      <p>Once the 200-trip limit is exhausted or the 12-month period ends (whichever is earlier), the FASTag reverts to the regular pay-per-use toll deduction model. To continue enjoying benefits, users can purchase a new pass.</p>
       
-      <h3><strong>Man of the match</strong></h3>
-      <p><strong>Aiden Markram</strong></p>
+      <h3><strong>Is It Valid on All Roads?</strong></h3>
+      <p>The pass is only valid on toll plazas under the National Highways Authority of India (NHAI). It will not apply to tolls collected by state governments, municipalities, or private operators managing local roads.</p>
       
-      <h3><strong>Records & Milestones</strong></h3>
-      <div class="payout-table">
-        <div class="table-row"><strong>First ICC Title since 1998:</strong> Ended a 27-year wait</div>
-        <div class="table-row"><strong>Highest successful chase in a Final:</strong> 282/5</div>
-        <div class="table-row"><strong>Most wickets in Final (Match):</strong> Kagiso Rabada – 9</div>
-        <div class="table-row"><strong>First South African captain to lift mace:</strong> Temba Bavuma</div>
-      </div>
-      
-      <hr style="margin: 20px 0; border: 1px solid #ddd;">
-      
-      <p><strong>This was Test cricket's ultimate drama—served at its finest.</strong></p>
-      
-      <hr style="margin: 20px 0; border: 1px solid #ddd;">
-      
-      <p class="conclusion">"<strong>There were lot of doubters, but the way we played would have wiped all of that out. Special moment for u all, special moment back home.</strong>" said <strong>Bavuma</strong>.</p>
+      <h3><strong>Optional, Not Mandatory</strong></h3>
+      <p>The annual pass is completely optional. If you're an occasional highway user, you can continue paying tolls via your existing FASTag balance as usual.</p>
     </div>`,
-    category: "General",
-    date: "june 15, 2025",
+    category: "Finance",
+    date: "june 19, 2025",
     readTime: 4,
-    source: "ESPN Cricinfo"
+    source: "Biz News Daily"
   },
   {
     id: 2,
