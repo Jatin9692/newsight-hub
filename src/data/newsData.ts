@@ -1,9 +1,15 @@
-
 import { NewsCategory } from "../components/CategoryTabs";
 
-// Utility function to generate URL-friendly slugs
-const slugify = (title: string): string =>
-  title.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
+// Improved slugify function for better URL compatibility
+const slugify = (title: string): string => {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '') // Remove special characters except spaces and hyphens
+    .replace(/\s+/g, '-')     // Replace spaces with hyphens
+    .replace(/-+/g, '-')      // Replace multiple hyphens with single hyphen
+    .replace(/^-+|-+$/g, '')  // Remove leading/trailing hyphens
+    .trim();
+};
 
 export interface NewsArticle {
   title: string;
@@ -18,7 +24,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   finance: [
     {
       title: "What Is Aladdin by Jio BlackRock?",
-      slug: slugify("What Is Aladdin by Jio BlackRock?"),
+      slug: "what-is-aladdin-by-jio-blackrock",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Aladdin (Asset, Liability, and Debt and Derivative Investment Network) is BlackRock's flagship, cloud based platform for institutional investors—and it's now available in India through the Jio BlackRock joint venture. By bringing together portfolio management, risk analytics, trade execution, compliance monitoring, and reporting into one unified dashboard, Aladdin empowers investors to see the full picture, plan for every scenario, and act with confidence.</p>
         
@@ -50,7 +56,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals",
-      slug: slugify("Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals"),
+      slug: "flipkart-exits-blackbuck-abfrl-in-1250-crore-block-deals",
       summary: `<div class="article-content">
         <p class="lead-paragraph"><strong>Flipkart</strong>, the <strong>Walmart-backed</strong> e-commerce giant, sold two of its investments this week:</p>
         
@@ -114,7 +120,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000",
-      slug: slugify("FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000"),
+      slug: "fastag-annual-pass-2025-travel-indias-highways-for-a-year-with-just-3000",
       summary: `<div class="article-content">
         <p class="lead-paragraph">India's road commuters are in for a major relief with the introduction of the FASTag Annual Pass—a game-changing initiative launched by Union Minister Nitin Gadkari. This pass allows owners of private vehicles to travel across national highways with ease and predictability by paying a one-time fee of ₹3,000 for up to 200 toll plaza crossings over a one-year period.</p>
         
@@ -171,7 +177,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Financial sector embraces blockchain technology",
-      slug: slugify("Financial sector embraces blockchain technology"),
+      slug: "financial-sector-embraces-blockchain-technology",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Major financial institutions are increasingly adopting blockchain solutions for transaction processing and record-keeping, marking a significant shift in how the banking industry approaches security and efficiency.</p>
         
@@ -189,30 +195,30 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   ],
   marketing: [
     {
-      title: "𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚",
-      slug: slugify("𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚"),
+      title: "Google Just Killed Half the Internet – Welcome to the AGI Era",
+      slug: "google-just-killed-half-the-internet-welcome-to-the-agi-era",
       summary: `<div class="article-content">
-        <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞's 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
+        <p class="lead-paragraph">Google's I/O 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that translates your speech live — without delay — the tech world will never be the same.</p>
         
         <h3>Key Announcements</h3>
         <ul>
-          <li><strong>𝐀𝐈 𝐌𝐨𝐝𝐞 𝐢𝐧 𝐆𝐨𝐨𝐠𝐥𝐞 𝐒𝐞𝐚𝐫𝐜𝐡:</strong> Say goodbye to blue links. Google introduced a new "AI Mode" for its Search platform, transforming traditional search queries into conversational interactions.</li>
-          <li><strong>𝐑𝐞𝐚𝐥-𝐓𝐢𝐦𝐞 𝐌𝐞𝐞𝐭 𝐓𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐢𝐨𝐧:</strong> No more language barriers ever again. You speak in English they hear in perfect Spanish. No lag, no subtitles.</li>
-          <li><strong>𝐓𝐫𝐲-𝐎𝐧 𝐀𝐈 𝐒𝐡𝐨𝐩𝐩𝐢𝐧𝐠:</strong> Upload your pic → And you can virtually try on any clothes</li>
+          <li><strong>AI Mode in Google Search:</strong> Say goodbye to blue links. Google introduced a new "AI Mode" for its Search platform, transforming traditional search queries into conversational interactions.</li>
+          <li><strong>Real-Time Meet Translation:</strong> No more language barriers ever again. You speak in English they hear in perfect Spanish. No lag, no subtitles.</li>
+          <li><strong>Try-On AI Shopping:</strong> Upload your pic → And you can virtually try on any clothes</li>
           <li><strong>Agent Mode in Gemini:</strong> AI assistant to handle real-world tasks- Finds your flat, plans your trip, books your table.</li>
-          <li><strong>𝐕𝐞𝐨 3 & 𝐅𝐥𝐨𝐰:</strong> One prompt = Hollywood-level videos with scenes & sound.</li>
-          <li><strong>𝐉𝐮𝐥𝐞𝐬:</strong> An AI dev that updates your GitHub with a single English prompt</li>
-          <li><strong>𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐀𝐬𝐭𝐫𝐚:</strong> Camera-based AI that can search and act on your behalf.</li>
+          <li><strong>Veo 3 & Flow:</strong> One prompt = Hollywood-level videos with scenes & sound.</li>
+          <li><strong>Jules:</strong> An AI dev that updates your GitHub with a single English prompt</li>
+          <li><strong>Project Astra:</strong> Camera-based AI that can search and act on your behalf.</li>
         </ul>
         
         <h4>Also in the mix:</h4>
         <ul>
-          <li><strong>𝐆𝐨𝐨𝐠𝐥𝐞 𝐃𝐢𝐟𝐟𝐮𝐬𝐢𝐨𝐧:</strong> Codes 15x faster than LLMs.</li>
-          <li><strong>𝐒𝐭𝐢𝐭𝐜𝐡:</strong> From prompt to Figma UI.</li>
-          <li><strong>𝐒𝐢𝐠𝐧𝐆𝐞𝐦𝐦𝐚:</strong> Real-time sign language translation.</li>
+          <li><strong>Google Diffusion:</strong> Codes 15x faster than LLMs.</li>
+          <li><strong>Stitch:</strong> From prompt to Figma UI.</li>
+          <li><strong>SignGemma:</strong> Real-time sign language translation.</li>
         </ul>
         
-        <p class="conclusion">Google is not playing around. 𝐓𝐡𝐞 𝐀𝐆𝐈 𝐰𝐚𝐯𝐞 𝐢𝐬 𝐫𝐞𝐚𝐥 — 𝐚𝐧𝐝 𝐆𝐨𝐨𝐠𝐥𝐞 𝐦𝐢𝐠𝐡𝐭 𝐣𝐮𝐬𝐭 𝐛𝐞 𝐥𝐞𝐚𝐝𝐢𝐧𝐠 𝐭𝐡𝐞 𝐩𝐚𝐜𝐤.</p>
+        <p class="conclusion">Google is not playing around. The AGI wave is real — and Google might just be leading the pack.</p>
       </div>`,
       source: "Business Today",
       date: "May 24, 2025",
@@ -220,7 +226,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Digital marketing trends reshaping brand strategies",
-      slug: slugify("Digital marketing trends reshaping brand strategies"),
+      slug: "digital-marketing-trends-reshaping-brand-strategies",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Companies are rapidly adapting their marketing approaches as consumer behavior shifts toward digital-first interactions and personalized experiences.</p>
         
@@ -237,7 +243,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Social commerce drives new revenue streams",
-      slug: slugify("Social commerce drives new revenue streams"),
+      slug: "social-commerce-drives-new-revenue-streams",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Social media platforms are becoming primary sales channels as brands integrate shopping experiences directly into social content.</p>
         
@@ -256,7 +262,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   politics: [
     {
       title: "Election reforms spark nationwide debate",
-      slug: slugify("Election reforms spark nationwide debate"),
+      slug: "election-reforms-spark-nationwide-debate",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Proposed changes to electoral processes have ignited discussions about democracy, representation, and voting rights across the nation.</p>
         
@@ -273,7 +279,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "International trade agreements under review",
-      slug: slugify("International trade agreements under review"),
+      slug: "international-trade-agreements-under-review",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Government officials are reassessing existing trade partnerships to address changing global economic conditions and domestic priorities.</p>
         
@@ -290,7 +296,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Healthcare policy reforms gain momentum",
-      slug: slugify("Healthcare policy reforms gain momentum"),
+      slug: "healthcare-policy-reforms-gain-momentum",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Bipartisan support emerges for comprehensive healthcare reforms aimed at improving accessibility and reducing costs for citizens.</p>
         
@@ -309,7 +315,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   ai: [
     {
       title: "Breakthrough in quantum-AI hybrid computing",
-      slug: slugify("Breakthrough in quantum-AI hybrid computing"),
+      slug: "breakthrough-in-quantum-ai-hybrid-computing",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Researchers achieve significant milestone in combining quantum computing power with artificial intelligence, opening new possibilities for complex problem-solving.</p>
         
@@ -326,7 +332,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "AI ethics framework gains global adoption",
-      slug: slugify("AI ethics framework gains global adoption"),
+      slug: "ai-ethics-framework-gains-global-adoption",
       summary: `<div class="article-content">
         <p class="lead-paragraph">International organizations collaborate on establishing comprehensive guidelines for responsible AI development and deployment across industries.</p>
         
@@ -343,7 +349,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     },
     {
       title: "Machine learning revolutionizes medical diagnosis",
-      slug: slugify("Machine learning revolutionizes medical diagnosis"),
+      slug: "machine-learning-revolutionizes-medical-diagnosis",
       summary: `<div class="article-content">
         <p class="lead-paragraph">Advanced AI systems demonstrate unprecedented accuracy in detecting diseases early, potentially saving millions of lives through faster, more precise medical diagnoses.</p>
         
