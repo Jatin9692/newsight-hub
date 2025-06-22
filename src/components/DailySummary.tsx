@@ -9,6 +9,43 @@ import { ArrowRight } from 'lucide-react';
 const newsItems = [
   {
     id: 1,
+    title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
+    summary: `<div class="article-content">
+      <p class="lead-paragraph">In a major escalation of Middle East tensions, the United States has joined Israel in bombing three of Iran's key nuclear sites—Fordow, Natanz, and Isfahan—after weeks of mounting hostilities.</p>
+      
+      <h2>What's Going On in the iran-israel war?</h2>
+      <p>On June 22, 2025, U.S. B-2 stealth bombers and submarine-launched missiles joined Israeli jets in hitting Iran's nuclear facilities. Israel cited new intelligence on Iran's bomb program; President Trump personally authorized U.S. involvement.</p>
+      
+      <h2>How Trump Ordered U.S. Strikes in the iran-israel war</h2>
+      <p>Without seeking Congress, Trump invoked executive war powers. He called it a "spectacular success" and said it "obliterated" Iran's nuclear threat.</p>
+      
+      <h2>What Was Destroyed in Iran's Nuclear Sites?</h2>
+      <p>Precision strikes heavily damaged uranium enrichment halls at Fordow, Natanz, and Isfahan. Nearby missile and drone factories were also hit to degrade Iran's wider military capacity.</p>
+      
+      <h2>Who Was Killed in the War—Key IRGC Figures & Civilians</h2>
+      <p>Two senior IRGC generals—Saeed Izadi and Behnam Shahriyari—were killed. Iran reports 430–657 total deaths, including 263+ civilians. Retaliatory Iranian attacks have killed 24+ civilians in Israel.</p>
+      
+      <h2>Why Trump and Israel Say They Hit Iran's Nuclear Program</h2>
+      <p>They argue these strikes prevent an Iranian bomb and restore deterrence. Both governments say diplomacy had failed to halt Tehran's nuclear push.</p>
+      
+      <h2>Global Reactions to the iran-israel war under Trump</h2>
+      <p>China and Russia condemned the strikes. European nations urged restraint and offered mediation. The United Nations warned about rising humanitarian and nuclear safety risks.</p>
+      
+      <h2>What's Next in the iran-israel war?</h2>
+      <p>Iran has already launched drone and missile barrages on Israeli cities. Houthi rebels in Yemen threaten to strike U.S. naval vessels. Experts fear a wider regional conflict.</p>
+      
+      <h2>In Simple Terms: The iran-israel war & Trump's role</h2>
+      <p>The U.S. and Israel bombed Iran's nuclear sites to stop its bomb program. Iran retaliated. The conflict now risks spreading beyond its current hotspots.</p>
+      
+      <p class="conclusion">With U.S. forces now directly involved, the iran-israel war has entered a new phase. The world watches nervously as both sides prepare for possible further escalation.</p>
+    </div>`,
+    category: "Politics",
+    date: "June 22, 2025",
+    readTime: 6,
+    source: "BizNews Daily"
+  },
+  {
+    id: 2,
     title: "FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000",
     summary: `<div class="article-content">
       <p class="lead-paragraph">India's road commuters are in for a major relief with the introduction of the FASTag Annual Pass—a game-changing initiative launched by Union Minister Nitin Gadkari. This pass allows owners of private vehicles to travel across national highways with ease and predictability by paying a one-time fee of ₹3,000 for up to 200 toll plaza crossings over a one-year period.</p>
@@ -66,7 +103,7 @@ const newsItems = [
     source: "Biz News Daily"
   },
   {
-    id: 2,
+    id: 3,
     title: "Stampede Shocks Bengaluru: Devastating Chaos at RCB Felicitation",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Yesterday evening, thousands of passionate <strong>Royal Challengers Bengaluru (RCB)</strong> fans poured into the heart of <strong>Bengaluru</strong> to celebrate their team's success in the IPL.</p>
@@ -94,7 +131,7 @@ const newsItems = [
     source: "Bengaluru Times"
   },
   {
-    id: 3,
+    id: 4,
     title: "What Is Aladdin by Jio BlackRock?",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Aladdin (Asset, Liability, and Debt and Derivative Investment Network) is BlackRock's flagship, cloud based platform for institutional investors—and it's now available in India through the Jio BlackRock joint venture. By bringing together portfolio management, risk analytics, trade execution, compliance monitoring, and reporting into one unified dashboard, Aladdin empowers investors to see the full picture, plan for every scenario, and act with confidence.</p>
@@ -127,7 +164,7 @@ const newsItems = [
     source: "Jatin"
   },
   {
-    id: 4,
+    id: 5,
     title: "Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals",
     summary: `<div class="article-content">
       <p class="lead-paragraph"><strong>Flipkart</strong>, the <strong>Walmart-backed</strong> e-commerce giant, sold two of its investments this week:</p>
@@ -192,7 +229,7 @@ const newsItems = [
     source: "Angel One"
   },
   {
-    id: 5,
+    id: 6,
     title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
     summary: `<div class="article-content">
       <p class="lead-paragraph">The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24.</p>
@@ -244,7 +281,7 @@ const newsItems = [
     source: "Business Today"
   },
   {
-    id: 6,
+    id: 7,
     title: "𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚",
     summary: `<div class="article-content">
       <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞's 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
@@ -275,7 +312,7 @@ const newsItems = [
     source: "Business Today"
   },
   {
-    id: 7,
+    id: 8,
     title: "Financial sector embraces blockchain technology",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Major financial institutions are increasingly adopting blockchain solutions for transaction processing and record-keeping, marking a significant shift in how the banking industry approaches security and efficiency.</p>
@@ -339,7 +376,7 @@ const DailySummary = () => {
   };
 
   return (
-    <Card className={`w-full ${isMobile ? 'h-auto' : desktopHeight} bg-gradient-to-br from-primary/10 to-primary/5`}>
+    <Card className={`w-full ${isMobile ? 'h-auto'  : desktopHeight} bg-gradient-to-br from-primary/10 to-primary/5`}>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl font-bold">Daily Summary</CardTitle>
         <CardDescription>{today}</CardDescription>
