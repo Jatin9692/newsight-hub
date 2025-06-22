@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -183,9 +184,8 @@ const NewsDetail = () => {
               </CardTitle>
             </CardHeader>
             
-            <CardContent className="prose prose-slate max-w-none">
+            <CardContent className="formatted-article-content">
               <div
-                className="article-content"
                 dangerouslySetInnerHTML={{ __html: article.summary }}
               />
             </CardContent>
