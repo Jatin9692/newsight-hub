@@ -32,6 +32,7 @@ function App() {
               <Route path="/simplified-insights" element={<SimplifiedInsights />} />
               <Route path="/gifts" element={<Gifts />} />
               <Route path="/educational-focus" element={<EducationalFocus />} />
+              <Route path="/news/:slug" element={<NewsDetail />} />
               <Route path="/news/:category/:slug" element={<NewsDetail />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

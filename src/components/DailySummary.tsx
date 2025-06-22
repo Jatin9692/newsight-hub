@@ -10,6 +10,7 @@ const newsItems = [
   {
     id: 1,
     title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
+    slug: "us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump",
     summary: `<div class="article-content">
       <p class="lead-paragraph">In a major escalation of Middle East tensions, the United States has joined Israel in bombing three of Iran's key nuclear sites—Fordow, Natanz, and Isfahan—after weeks of mounting hostilities.</p>
       
@@ -47,6 +48,7 @@ const newsItems = [
   {
     id: 2,
     title: "FASTag Annual Pass 2025: Travel India's Highways for a Year with Just ₹3,000",
+    slug: "fastag-annual-pass-2025-travel-indias-highways-for-a-year-with-just-3000",
     summary: `<div class="article-content">
       <p class="lead-paragraph">India's road commuters are in for a major relief with the introduction of the FASTag Annual Pass—a game-changing initiative launched by Union Minister Nitin Gadkari. This pass allows owners of private vehicles to travel across national highways with ease and predictability by paying a one-time fee of ₹3,000 for up to 200 toll plaza crossings over a one-year period.</p>
       
@@ -105,6 +107,7 @@ const newsItems = [
   {
     id: 3,
     title: "Stampede Shocks Bengaluru: Devastating Chaos at RCB Felicitation",
+    slug: "stampede-shocks-bengaluru-devastating-chaos-rcb-felicitation",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Yesterday evening, thousands of passionate <strong>Royal Challengers Bengaluru (RCB)</strong> fans poured into the heart of <strong>Bengaluru</strong> to celebrate their team's success in the IPL.</p>
       
@@ -133,6 +136,7 @@ const newsItems = [
   {
     id: 4,
     title: "What Is Aladdin by Jio BlackRock?",
+    slug: "what-is-aladdin-by-jio-blackrock",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Aladdin (Asset, Liability, and Debt and Derivative Investment Network) is BlackRock's flagship, cloud based platform for institutional investors—and it's now available in India through the Jio BlackRock joint venture. By bringing together portfolio management, risk analytics, trade execution, compliance monitoring, and reporting into one unified dashboard, Aladdin empowers investors to see the full picture, plan for every scenario, and act with confidence.</p>
       
@@ -166,6 +170,7 @@ const newsItems = [
   {
     id: 5,
     title: "Flipkart Exits Blackbuck & ABFRL in ₹1,250 Crore Block Deals",
+    slug: "flipkart-exits-blackbuck-abfrl-in-1250-crore-block-deals",
     summary: `<div class="article-content">
       <p class="lead-paragraph"><strong>Flipkart</strong>, the <strong>Walmart-backed</strong> e-commerce giant, sold two of its investments this week:</p>
       
@@ -231,6 +236,7 @@ const newsItems = [
   {
     id: 6,
     title: "RBI's ₹2.69 Lakh Crore Gift to the Government: What It Means for You and the Economy",
+    slug: "rbis-269-lakh-crore-gift-government-what-it-means-you-economy",
     summary: `<div class="article-content">
       <p class="lead-paragraph">The Reserve Bank of India (RBI) has approved a record surplus transfer of ₹2.68–2.69 lakh crore to the Central Government for the fiscal year ending March 31, 2025. This payout is a 27.4% increase over the ₹2.1 lakh crore transferred in FY 2023-24.</p>
       
@@ -283,6 +289,7 @@ const newsItems = [
   {
     id: 7,
     title: "𝐆𝐨𝐨𝐠𝐥𝐞 𝐉𝐮𝐬𝐭 𝐊𝐢𝐥𝐥𝐞𝐝 𝐇𝐚𝐥𝐟 𝐭𝐡𝐞 𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 – 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐀𝐆𝐈 𝐄𝐫𝐚",
+    slug: "google-just-killed-half-internet-welcome-agi-era",
     summary: `<div class="article-content">
       <p class="lead-paragraph">𝐆𝐨𝐨𝐠𝐥𝐞's 𝐈/𝐎 2025 didn't just make headlines. It shook industries. From Perplexity-like search results built right into Google Search to a real-time Google Meet that 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐲𝐨𝐮𝐫 𝐬𝐩𝐞𝐞𝐜𝐡 𝐥𝐢𝐯𝐞 — without delay — the tech world will never be the same.</p>
       
@@ -314,6 +321,7 @@ const newsItems = [
   {
     id: 8,
     title: "Financial sector embraces blockchain technology",
+    slug: "financial-sector-embraces-blockchain-technology",
     summary: `<div class="article-content">
       <p class="lead-paragraph">Major financial institutions are increasingly adopting blockchain solutions for transaction processing and record-keeping, marking a significant shift in how the banking industry approaches security and efficiency.</p>
       
@@ -359,15 +367,15 @@ const DailySummary = () => {
   const desktopHeight = "h-full";
   
   const handleNewsClick = (newsItem: typeof newsItems[0]) => {
-    const slug = newsItem.title.toLowerCase().replace(/[^\w\s]/gi, '').replace(/\s+/g, '-');
-    navigate(`/news/${newsItem.category}/${slug}`, { 
+    navigate(`/news/${newsItem.slug}`, { 
       state: { 
         article: {
           title: newsItem.title,
           source: newsItem.source,
           summary: newsItem.summary,
           date: newsItem.date,
-          readTime: newsItem.readTime
+          readTime: newsItem.readTime,
+          slug: newsItem.slug
         },
         category: newsItem.category,
         isDailySummary: true
