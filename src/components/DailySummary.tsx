@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -9,9 +10,9 @@ const DailySummary = () => {
   const navigate = useNavigate();
 
   const handleNewsClick = (article: any) => {
-    // For the Trump ceasefire article, navigate to the static HTML page
-    if (article.slug === 'trump-ceasefire-war-iran-israel') {
-      window.location.href = '/news/trump-ceasefire-war-iran-israel.html';
+    // For static HTML articles, navigate directly to the file
+    if (article.slug === 'trump-ceasefire-war-iran-israel' || article.slug === 'us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump') {
+      window.location.href = `/news/${article.slug}.html`;
       return;
     }
     
@@ -59,16 +60,16 @@ const DailySummary = () => {
           slug: "trump-ceasefire-war-iran-israel"
         },
         {
+          title: "U.S. Joins Israel in Striking Iran's Nuclear Sites",
+          source: "BizNews Daily",
+          time: "2 days ago",
+          slug: "us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump"
+        },
+        {
           title: "Senate passes bipartisan infrastructure bill",
           source: "CNN",
           time: "3 hours ago",
           slug: "senate-passes-infrastructure-bill"
-        },
-        {
-          title: "New cybersecurity regulations proposed by White House",
-          source: "The Hill",
-          time: "7 hours ago",
-          slug: "cybersecurity-regulations-white-house"
         },
       ],
     },

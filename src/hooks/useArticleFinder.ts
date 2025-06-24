@@ -1,7 +1,30 @@
+
 import { articles, NewsArticle } from '../data/newsData';
 
 // Define the daily summary articles with their slugs
 const dailySummaryArticles = [
+  {
+    slug: "trump-ceasefire-war-iran-israel",
+    title: "Trump Announces Potential Ceasefire in Iran-Israel War",
+    source: "Truth Social",
+    date: "June 24, 2025",
+    readTime: 5,
+    category: "Politics",
+    summary: `<div class="formatted-article-content">
+      <p class="lead-paragraph">In a dramatic diplomatic development, former President Donald Trump announced through his Truth Social platform that he has brokered preliminary ceasefire discussions between Iran and Israel, potentially ending weeks of escalating military confrontations in the Middle East.</p>
+      
+      <h2>🔥 Latest Developments</h2>
+      <p>June 24, 2025 - 11:45 AM EST: Trump posted on Truth Social claiming "major breakthrough" in Iran-Israel tensions through "back-channel diplomacy" involving Qatar as mediator.</p>
+      
+      <h2>What Trump Claims to Have Achieved</h2>
+      <p>According to Trump's social media statements, the proposed ceasefire includes immediate cessation of military strikes, withdrawal of forces from contested border areas, international monitoring through UN peacekeepers, and humanitarian corridors for civilian populations.</p>
+      
+      <h2>Official Government Response</h2>
+      <p>The Biden administration has not confirmed Trump's claims. White House Press Secretary stated they are "aware of various diplomatic initiatives" but emphasized that "official U.S. foreign policy is conducted through proper government channels."</p>
+      
+      <p class="conclusion">DEVELOPING STORY: We will continue monitoring this situation and provide updates as official confirmations emerge from all parties involved. The potential for peace remains fragile but represents a crucial moment for Middle East stability.</p>
+    </div>`
+  },
   {
     slug: "us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump",
     title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
@@ -24,22 +47,9 @@ const dailySummaryArticles = [
       <h2>Who Was Killed in the War—Key IRGC Figures & Civilians</h2>
       <p>Two senior IRGC generals—Saeed Izadi and Behnam Shahriyari—were killed. Iran reports 430–657 total deaths, including 263+ civilians. Retaliatory Iranian attacks have killed 24+ civilians in Israel.</p>
       
-      <h2>Why Trump and Israel Say They Hit Iran's Nuclear Program</h2>
-      <p>They argue these strikes prevent an Iranian bomb and restore deterrence. Both governments say diplomacy had failed to halt Tehran's nuclear push.</p>
-      
-      <h2>Global Reactions to the iran-israel war under Trump</h2>
-      <p>China and Russia condemned the strikes. European nations urged restraint and offered mediation. The United Nations warned about rising humanitarian and nuclear safety risks.</p>
-      
-      <h2>What's Next in the iran-israel war?</h2>
-      <p>Iran has already launched drone and missile barrages on Israeli cities. Houthi rebels in Yemen threaten to strike U.S. naval vessels. Experts fear a wider regional conflict.</p>
-      
-      <h2>In Simple Terms: The iran-israel war & Trump's role</h2>
-      <p>The U.S. and Israel bombed Iran's nuclear sites to stop its bomb program. Iran retaliated. The conflict now risks spreading beyond its current hotspots.</p>
-      
       <p class="conclusion">With U.S. forces now directly involved, the iran-israel war has entered a new phase. The world watches nervously as both sides prepare for possible further escalation.</p>
     </div>`
-  },
-  
+  }
 ];
 
 export const useArticleFinder = () => {
