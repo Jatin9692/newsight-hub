@@ -7,6 +7,13 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://biznewsdaily.live/news/trump-ceasefire-war-iran-israel.html</loc>
+    <lastmod>2025-06-24</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.96</priority>
+  </url>
   
   <url>
     <loc>https://biznewsdaily.live/us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump.html</loc>
