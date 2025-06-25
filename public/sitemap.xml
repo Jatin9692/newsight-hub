@@ -1,10 +1,11 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- ✅ HOMEPAGE -->
   <url>
     <loc>https://biznewsdaily.live/</loc>
-    <lastmod>2025-06-24</lastmod>
+    <lastmod>2025-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -23,6 +24,14 @@
     <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+  </url>
+
+  <!-- ✅ NEW: TOP BUSINESS NEWS TODAY -->
+  <url>
+    <loc>https://biznewsdaily.live/news/business/top-business-news-today.html</loc>
+    <lastmod>2025-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.92</priority>
   </url>
 
   <!-- ✅ FASTAG ANNUAL PASS -->
@@ -47,14 +56,6 @@
     <lastmod>2025-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-  </url>
-
-  <!-- ✅ NEW: TOP BUSINESS NEWS TODAY (NEW FILE) -->
-  <url>
-    <loc>https://biznewsdaily.live/top-business-news-today.html</loc>
-    <lastmod>2025-06-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.92</priority>
   </url>
 
 </urlset>

@@ -26,6 +26,28 @@ const dailySummaryArticles = [
     </div>`
   },
   {
+    slug: "top-business-news-today",
+    title: "Top Business News Today India - Latest Market Updates",
+    source: "BizNewsDaily",
+    date: "June 25, 2025",
+    readTime: 8,
+    category: "Business",
+    summary: `<div class="formatted-article-content">
+      <p class="lead-paragraph">Stay updated with the top business news today from India's dynamic market landscape. From credit card spending surges to major acquisitions, here are the 6 biggest business stories shaping India's economy on June 25, 2025.</p>
+      
+      <h2>🔥 Credit Card Spending Surge</h2>
+      <p>Holiday travel helped push credit card spending to ₹1.9 lakh crore in May 2025, a 15% year-on-year rise. Over 760,000 new cards were issued in May alone, led by HDFC Bank, SBI, and Axis Bank.</p>
+      
+      <h2>💼 Major Acquisitions</h2>
+      <p>Hindalco Industries is acquiring AluChem, a US-based specialty alumina firm, for $125 million to strengthen its high-tech materials portfolio and double capacity to 1 million tonnes.</p>
+      
+      <h2>🚗 Manufacturing Investments</h2>
+      <p>Jaguar Land Rover will invest ₹9,000 crore in Tamil Nadu to assemble luxury SUVs—Range Rover & Velar—by early 2026 under Tata Motors' expansion plan.</p>
+      
+      <p class="conclusion">Today's top business news highlights India's growing consumer spending, strategic acquisitions, and expanding global presence across multiple sectors.</p>
+    </div>`
+  },
+  {
     slug: "us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump",
     title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
     source: "BizNews Daily",

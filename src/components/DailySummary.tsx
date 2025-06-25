@@ -8,9 +8,12 @@ const DailySummary = () => {
   const [expandedStories, setExpandedStories] = useState<Record<string, boolean>>({});
 
   const handleNewsClick = (article: any) => {
-    // For static HTML articles, navigate directly to the file
-    if (article.slug === 'trump-ceasefire-war-iran-israel' || article.slug === 'us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump') {
-      window.location.href = `/news/${article.slug}.html`;
+    // For HTML articles, navigate directly to the file
+    if (article.slug === 'trump-ceasefire-war-iran-israel' || 
+        article.slug === 'us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump' ||
+        article.slug === 'top-business-news-today') {
+      const basePath = article.slug === 'top-business-news-today' ? '/news/business/' : '/news/';
+      window.location.href = `${basePath}${article.slug}.html`;
       return;
     }
     
@@ -40,6 +43,17 @@ const DailySummary = () => {
       }
     },
     {
+      id: 'business-news-today',
+      title: 'Top Business News Today: Credit Card Surge & Major Acquisitions',
+      isExpanded: false,
+      article: {
+        title: "Top Business News Today India - Latest Market Updates",
+        source: "BizNewsDaily",
+        time: "2 hours ago",
+        slug: "top-business-news-today"
+      }
+    },
+    {
       id: 'global-markets',
       title: 'Global markets respond to new economic policies',
       isExpanded: false
@@ -55,11 +69,6 @@ const DailySummary = () => {
       isExpanded: false
     },
     {
-      id: 'championship-finals',
-      title: 'Championship finals break viewing records',
-      isExpanded: false
-    },
-    {
       id: 'renewable-energy',
       title: 'New renewable energy initiatives gain traction',
       isExpanded: false
@@ -70,7 +79,7 @@ const DailySummary = () => {
     <div className="bg-gray-100 p-4 rounded-lg">
       <div className="mb-4">
         <h2 className="text-lg font-bold text-gray-800 mb-1">Daily Summary</h2>
-        <p className="text-sm text-gray-600">Tuesday, April 15, 2025</p>
+        <p className="text-sm text-gray-600">Tuesday, June 25, 2025</p>
       </div>
 
       <div className="mb-4">
