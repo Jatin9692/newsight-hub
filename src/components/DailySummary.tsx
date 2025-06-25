@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronDown, ChevronRight } from 'lucide-react';
@@ -12,8 +11,10 @@ const DailySummary = () => {
     if (article.slug === 'trump-ceasefire-war-iran-israel' || 
         article.slug === 'us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump' ||
         article.slug === 'top-business-news-today') {
-      const basePath = article.slug === 'top-business-news-today' ? '/news/business/' : '/news/';
-      window.location.href = `${basePath}${article.slug}.html`;
+      const url = article.slug === 'top-business-news-today' ? 
+        '/top-business-news-today.html' : 
+        `/news/${article.slug}.html`;
+      window.location.href = url;
       return;
     }
     
