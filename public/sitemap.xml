@@ -1,7 +1,7 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- ✅ HOMEPAGE -->
   <url>
     <loc>https://biznewsdaily.live/</loc>
     <lastmod>2025-06-24</lastmod>
@@ -9,7 +9,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- ✅ MAIN TRUMP CEASEFIRE ARTICLE -->
+  <!-- ✅ TRUMP CEASEFIRE MAIN ARTICLE -->
   <url>
     <loc>https://biznewsdaily.live/news/trump-ceasefire-war-iran-israel.html</loc>
     <lastmod>2025-06-24</lastmod>
@@ -17,33 +17,44 @@
     <priority>0.96</priority>
   </url>
 
-  <!-- ✅ RELATED IRAN-ISRAEL WAR ARTICLE (ALREADY INDEXED) -->
+  <!-- ✅ IRAN-ISRAEL WAR RELATED ARTICLE -->
   <url>
-    <loc>https://biznewsdaily.live/news/us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump</loc>
+    <loc>https://biznewsdaily.live/news/us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump.html</loc>
     <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
+  <!-- ✅ FASTAG ANNUAL PASS -->
   <url>
     <loc>https://biznewsdaily.live/news/fastag-annual-pass-2025-travel-indias-highways-for-a-year-with-just-3000</loc>
     <lastmod>2025-06-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 
+  <!-- ✅ JIO BLACKROCK ALADDIN ARTICLE -->
   <url>
     <loc>https://biznewsdaily.live/news/what-is-aladdin-by-jio-blackrock</loc>
     <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 
+  <!-- ✅ FLIPKART EXIT BLOCK DEALS -->
   <url>
     <loc>https://biznewsdaily.live/news/flipkart-exits-blackbuck-abfrl-in-1250-crore-block-deals</loc>
     <lastmod>2025-05-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ✅ NEW: TOP BUSINESS NEWS TODAY (NEW FILE) -->
+  <url>
+    <loc>https://biznewsdaily.live/top-business-news-today.html</loc>
+    <lastmod>2025-06-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.92</priority>
   </url>
 
 </urlset>
