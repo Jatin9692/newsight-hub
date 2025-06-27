@@ -10,10 +10,16 @@ const DailySummary = () => {
     // For HTML articles, navigate directly to the file
     if (article.slug === 'trump-ceasefire-war-iran-israel' || 
         article.slug === 'us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump' ||
-        article.slug === 'top-business-news-today') {
-      const url = article.slug === 'top-business-news-today' ? 
-        '/top-business-news-today.html' : 
-        `/news/${article.slug}.html`;
+        article.slug === 'top-business-news-today' ||
+        article.slug === 'us-china-trade-deal-trump-india-news') {
+      let url;
+      if (article.slug === 'top-business-news-today') {
+        url = '/top-business-news-today.html';
+      } else if (article.slug === 'us-china-trade-deal-trump-india-news') {
+        url = '/us-china-trade-deal-trump-india-news.html';
+      } else {
+        url = `/news/${article.slug}.html`;
+      }
       window.location.href = url;
       return;
     }
