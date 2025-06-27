@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import DailySummary from '../components/DailySummary';
@@ -49,6 +50,25 @@ const Index = () => {
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
               Your comprehensive resource for Simplified news insights.
             </p>
+          </div>
+        </section>
+
+        {/* Featured Article Banner */}
+        <section className="container py-2">
+          <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg p-4 mb-4">
+            <div className="flex items-center justify-between">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-blue-900 mb-1">🚨 Breaking: Trade Breakthrough</h3>
+                <p className="text-sm text-blue-700 mb-2">Trump confirms US-China trade truce and hints at historic US-India trade deal with major market impact</p>
+                <a 
+                  href="/us-china-trade-deal-trump-india-news.html"
+                  className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  Read Full Analysis →
+                </a>
+              </div>
+              <div className="text-2xl">📈</div>
+            </div>
           </div>
         </section>
 
