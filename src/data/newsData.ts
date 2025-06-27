@@ -23,6 +23,30 @@ export interface NewsArticle {
 export const newsData: Record<NewsCategory, NewsArticle[]> = {
   finance: [
     {
+      title: "Credit Card Spending Surges 15% - Travel Boom Drives ₹1.9L Crore in May",
+      source: "Economic Times",
+      time: "2 hours ago",
+      readTime: 4,
+      summary: "Holiday season and summer travel significantly boosted credit card transactions across India, with over 760,000 new cards issued in May 2025 alone.",
+      slug: "credit-card-spending-surge-travel-boom-may-2025"
+    },
+    {
+      title: "Hindalco Acquires US Firm AluChem for $125M to Double Alumina Capacity",
+      source: "Business Standard",
+      time: "4 hours ago",
+      readTime: 3,
+      summary: "Strategic acquisition will help Hindalco strengthen its specialty alumina portfolio and expand high-tech materials business significantly.",
+      slug: "hindalco-acquires-aluchem-125-million-alumina-capacity"
+    },
+    {
+      title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
+      source: "BizNewsDaily",
+      time: "1 hour ago",
+      readTime: 6,
+      summary: "Trump seals US-China truce, hints at historic US-India trade deal with big textile & pharma boosts.",
+      slug: "us-china-trade-deal-trump-india-news"
+    },
+    {
       title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
       slug: "us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump",
       summary: `<div class="article-content">
@@ -297,40 +321,28 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
   ],
   politics: [
     {
-      title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
-      slug: "us-joins-israel-striking-irans-nuclear-sites-iran-israel-war-trump",
-      summary: `<div class="article-content">
-        <p class="lead-paragraph">In a major escalation of Middle East tensions, the United States has joined Israel in bombing three of Iran's key nuclear sites—Fordow, Natanz, and Isfahan—after weeks of mounting hostilities.</p>
-        
-        <h2>What's Going On in the iran-israel war?</h2>
-        <p>On June 22, 2025, U.S. B-2 stealth bombers and submarine-launched missiles joined Israeli jets in hitting Iran's nuclear facilities. Israel cited new intelligence on Iran's bomb program; President Trump personally authorized U.S. involvement.</p>
-        
-        <h2>How Trump Ordered U.S. Strikes in the iran-israel war</h2>
-        <p>Without seeking Congress, Trump invoked executive war powers. He called it a "spectacular success" and said it "obliterated" Iran's nuclear threat.</p>
-        
-        <h2>What Was Destroyed in Iran's Nuclear Sites?</h2>
-        <p>Precision strikes heavily damaged uranium enrichment halls at Fordow, Natanz, and Isfahan. Nearby missile and drone factories were also hit to degrade Iran's wider military capacity.</p>
-        
-        <h2>Who Was Killed in the War—Key IRGC Figures & Civilians</h2>
-        <p>Two senior IRGC generals—Saeed Izadi and Behnam Shahriyari—were killed. Iran reports 430–657 total deaths, including 263+ civilians. Retaliatory Iranian attacks have killed 24+ civilians in Israel.</p>
-        
-        <h2>Why Trump and Israel Say They Hit Iran's Nuclear Program</h2>
-        <p>They argue these strikes prevent an Iranian bomb and restore deterrence. Both governments say diplomacy had failed to halt Tehran's nuclear push.</p>
-        
-        <h2>Global Reactions to the iran-israel war under Trump</h2>
-        <p>China and Russia condemned the strikes. European nations urged restraint and offered mediation. The United Nations warned about rising humanitarian and nuclear safety risks.</p>
-        
-        <h2>What's Next in the iran-israel war?</h2>
-        <p>Iran has already launched drone and missile barrages on Israeli cities. Houthi rebels in Yemen threaten to strike U.S. naval vessels. Experts fear a wider regional conflict.</p>
-        
-        <h2>In Simple Terms: The iran-israel war & Trump's role</h2>
-        <p>The U.S. and Israel bombed Iran's nuclear sites to stop its bomb program. Iran retaliated. The conflict now risks spreading beyond its current hotspots.</p>
-        
-        <p class="conclusion">With U.S. forces now directly involved, the iran-israel war has entered a new phase. The world watches nervously as both sides prepare for possible further escalation.</p>
-      </div>`,
-      source: "BizNews Daily",
-      date: "June 22, 2025",
-      readTime: 6
+      title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
+      source: "BizNewsDaily",
+      time: "1 hour ago",
+      readTime: 6,
+      summary: "Trump seals US-China truce, hints at historic US-India trade deal with big textile & pharma boosts.",
+      slug: "us-china-trade-deal-trump-india-news"
+    },
+    {
+      title: "New Healthcare Reform Bill Passes Senate Committee",
+      source: "Political Wire",
+      time: "3 hours ago",
+      readTime: 5,
+      summary: "Comprehensive healthcare legislation moves forward with bipartisan support, focusing on prescription drug costs and rural healthcare access.",
+      slug: "healthcare-reform-bill-senate-committee-passes"
+    },
+    {
+      title: "Trump announces potential ceasefire in Iran-Israel war",
+      source: "Truth Social",
+      time: "1 hour ago",
+      readTime: 5,
+      summary: "Former President claims breakthrough in Middle East diplomacy through back-channel negotiations involving Qatar as mediator.",
+      slug: "trump-ceasefire-war-iran-israel"
     },
     {
       title: "Election reforms spark nationwide debate",

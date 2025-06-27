@@ -1,8 +1,29 @@
-
 import { articles, NewsArticle } from '../data/newsData';
 
 // Define the daily summary articles with their slugs
 const dailySummaryArticles = [
+  {
+    slug: "us-china-trade-deal-trump-india-news",
+    title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
+    source: "BizNewsDaily",
+    date: "June 27, 2025",
+    readTime: 6,
+    category: "Politics",
+    summary: `<div class="formatted-article-content">
+      <p class="lead-paragraph">President Donald Trump announced a headline US–China tariff truce and teased a major US–India trade deal, sending global markets and Indian exporters surging on hopes of tariff relief and new opportunities.</p>
+      
+      <h2>🔥 US–China Trade Truce Details</h2>
+      <p>After nearly three years of tit-for-tat tariffs—up to 45% on over $500 billion in goods—Trump said the U.S. "has just signed" a deal with China based on April's Geneva talks. The truce halts new tariffs while existing duties remain in place.</p>
+      
+      <h2>💼 Historic US–India Deal Coming</h2>
+      <p>Immediately after the China news, Trump promised a "very big" deal with India. Focus areas include textiles ($40B exports), pharmaceuticals ($13B), and IT services ($150B) with potential for significant tariff cuts and regulatory streamlining.</p>
+      
+      <h2>📈 Market Reaction</h2>
+      <p>S&P 500 +0.7%, Dow Jones +180 points, CSI 300 +1.1%, Sensex +0.8% (72,450), Nifty 50 +0.9% (22,100), and rupee strengthened to ₹83.25.</p>
+      
+      <p class="conclusion">Trump's announcements signal a strategic shift towards negotiation, with potential tariff relief and expanded market access reshaping global trade dynamics.</p>
+    </div>`
+  },
   {
     slug: "trump-ceasefire-war-iran-israel",
     title: "Trump Announces Potential Ceasefire in Iran-Israel War",

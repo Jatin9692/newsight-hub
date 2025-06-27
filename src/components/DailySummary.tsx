@@ -33,14 +33,14 @@ const DailySummary = () => {
 
   const summaryStories = [
     {
-      id: 'trump-ceasefire',
-      title: 'Trump announces potential ceasefire in Iran-Israel war',
+      id: 'us-china-trade-deal',
+      title: 'Trump Confirms US–China Trade Truce; Big India Deal Coming',
       isExpanded: false,
       article: {
-        title: "Trump announces potential ceasefire in Iran-Israel war",
-        source: "Truth Social",
+        title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
+        source: "BizNewsDaily",
         time: "1 hour ago",
-        slug: "trump-ceasefire-war-iran-israel"
+        slug: "us-china-trade-deal-trump-india-news"
       }
     },
     {
@@ -52,6 +52,17 @@ const DailySummary = () => {
         source: "BizNewsDaily",
         time: "2 hours ago",
         slug: "top-business-news-today"
+      }
+    },
+    {
+      id: 'trump-ceasefire',
+      title: 'Trump announces potential ceasefire in Iran-Israel war',
+      isExpanded: false,
+      article: {
+        title: "Trump announces potential ceasefire in Iran-Israel war",
+        source: "Truth Social",
+        time: "1 hour ago",
+        slug: "trump-ceasefire-war-iran-israel"
       }
     },
     {
