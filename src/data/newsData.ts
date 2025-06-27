@@ -23,9 +23,17 @@ export interface NewsArticle {
 export const newsData: Record<NewsCategory, NewsArticle[]> = {
   finance: [
     {
+      title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
+      source: "BizNewsDaily",
+      date: "June 27, 2025",
+      readTime: 6,
+      summary: "Trump seals US-China truce, hints at historic US-India trade deal with big textile & pharma boosts.",
+      slug: "us-china-trade-deal-trump-india-news"
+    },
+    {
       title: "Credit Card Spending Surges 15% - Travel Boom Drives ₹1.9L Crore in May",
       source: "Economic Times",
-      time: "2 hours ago",
+      date: "June 25, 2025",
       readTime: 4,
       summary: "Holiday season and summer travel significantly boosted credit card transactions across India, with over 760,000 new cards issued in May 2025 alone.",
       slug: "credit-card-spending-surge-travel-boom-may-2025"
@@ -33,18 +41,10 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     {
       title: "Hindalco Acquires US Firm AluChem for $125M to Double Alumina Capacity",
       source: "Business Standard",
-      time: "4 hours ago",
+      date: "June 25, 2025",
       readTime: 3,
       summary: "Strategic acquisition will help Hindalco strengthen its specialty alumina portfolio and expand high-tech materials business significantly.",
       slug: "hindalco-acquires-aluchem-125-million-alumina-capacity"
-    },
-    {
-      title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
-      source: "BizNewsDaily",
-      time: "1 hour ago",
-      readTime: 6,
-      summary: "Trump seals US-China truce, hints at historic US-India trade deal with big textile & pharma boosts.",
-      slug: "us-china-trade-deal-trump-india-news"
     },
     {
       title: "U.S. Joins Israel in Striking Iran's Nuclear Sites – iran-israel war escalates under Trump's order",
@@ -323,7 +323,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     {
       title: "Trump Confirms US–China Trade Truce; Big India Deal Coming",
       source: "BizNewsDaily",
-      time: "1 hour ago",
+      date: "June 27, 2025",
       readTime: 6,
       summary: "Trump seals US-China truce, hints at historic US-India trade deal with big textile & pharma boosts.",
       slug: "us-china-trade-deal-trump-india-news"
@@ -331,7 +331,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     {
       title: "New Healthcare Reform Bill Passes Senate Committee",
       source: "Political Wire",
-      time: "3 hours ago",
+      date: "June 25, 2025",
       readTime: 5,
       summary: "Comprehensive healthcare legislation moves forward with bipartisan support, focusing on prescription drug costs and rural healthcare access.",
       slug: "healthcare-reform-bill-senate-committee-passes"
@@ -339,7 +339,7 @@ export const newsData: Record<NewsCategory, NewsArticle[]> = {
     {
       title: "Trump announces potential ceasefire in Iran-Israel war",
       source: "Truth Social",
-      time: "1 hour ago",
+      date: "June 24, 2025",
       readTime: 5,
       summary: "Former President claims breakthrough in Middle East diplomacy through back-channel negotiations involving Qatar as mediator.",
       slug: "trump-ceasefire-war-iran-israel"
