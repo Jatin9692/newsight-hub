@@ -70,6 +70,23 @@ const Index = () => {
               <div className="text-2xl">📈</div>
             </div>
           </div>
+
+          {/* Latest Finance News */}
+          <div className="bg-gradient-to-r from-purple-50 to-orange-50 border border-purple-200 rounded-lg p-4 mb-4">
+            <div className="flex items-center justify-between">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-purple-900 mb-1">💰 Finance Alert: Adani NCD Issue</h3>
+                <p className="text-sm text-purple-700 mb-2">Adani Enterprises raises ₹1,000 cr via AA-rated NCD at up to 9.30% yield — full market impact here</p>
+                <a 
+                  href="/daily-summary/adani-enterprises-ncd-overview.html"
+                  className="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-800 transition-colors"
+                >
+                  View Analysis →
+                </a>
+              </div>
+              <div className="text-2xl">🏦</div>
+            </div>
+          </div>
         </section>
 
         <section className="container py-2">
